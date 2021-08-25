@@ -1,0 +1,400 @@
+*{
+  font-family: 'Roboto Slab', serif;
+}
+#div-for-pic {
+  margin-bottom: 1%;
+  margin-top: 0%;
+}
+#div-for-pic img{
+  width: 25%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+
+#main-for-logsign{
+  display: flex;
+  margin: auto;
+  /* border: 1px solid red; */
+ 
+}
+
+#main-for-logsign div{
+ /* border: 1px solid black; */
+  width: 40%;
+  margin: auto;
+  padding: 1%;
+}
+
+#main-for-logsign #for-line{
+  width: 0%;
+  padding: 0%;
+  height: 600px;
+  border: 1px solid rgb(12, 12, 12);
+}
+
+#signup{
+  margin-top: 0% !important;
+
+}
+.login2{
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 96% 1%;
+}
+#newuser{
+  font-size: 22px;
+}
+#create{
+  font-weight: 900;
+}
+#create1{
+  font-size: 22px;
+  font-weight: 700;
+}
+li{
+  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#btnsignup{
+  display: flex;
+  margin: 8% auto;
+  padding: 2%;
+  font-weight: 400;
+  color: white ;
+  background-color: black;
+  width:100%;
+  justify-content: center;
+  font-size: 17px;
+}
+
+#btnsignup>a{
+  color: white;
+  text-decoration: none;
+}
+
+#for-login{
+  margin-top: 0% !important;
+}
+
+#for-login div{
+  width: 96%;
+  display: grid;
+  /* margin: 3% auto; */
+  margin-top: 3%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 2%;
+  text-align: center;
+}
+#using_password{
+  display: grid;
+  padding-bottom: 0% !important;
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+  width: 100%;
+}
+#using_password input{
+height: 40px;
+margin: 4%;
+background-color: rgb(235, 235, 235);
+text-align: center;
+border: 1px solid rgb(187, 186, 186,0.1);
+}
+
+#remember{
+  padding: 0% !important;
+  display: grid !important;
+  grid-template-columns: 5% 64% 30%;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  height: 30px !important;
+  /* margin: 0% !important; */
+  
+}
+#check2{
+  padding: 0% !important;
+  margin-left: 50% !important; 
+  
+}
+#para{
+  
+  text-align: right;
+  margin-top: 7%;
+ 
+}
+#para>a{
+  color: black;
+}
+#label{
+ 
+  margin-top: 3.5%;
+  text-align: left;
+  margin-left: 3%;
+}
+
+
+.btnlogin{
+  background-color: black;
+  height: 45px;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 4%;
+  width: 100%;
+  
+}
+
+#legend{
+  text-align: center;
+  font-size: 20px ;
+  margin:  auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: 600;
+  
+}
+fieldset{
+  margin-top: 3%;
+  margin-bottom: 0% !important;
+}
+#plusbtn{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1%;
+  background-color: white;
+  justify-content: center;
+  border: 1px solid white;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#fieldste2{
+  width: 35%;
+  margin: auto;
+display: grid;
+padding-left: 0%;
+padding-right: 0%;
+padding-bottom: 0%;
+
+height: 630px;
+gap: 7%;
+}
+#fieldste2>input{
+  margin-right: 3%;
+  margin-left: 3%;
+  /* margin-top: 0%; */
+  height: 40px;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(128, 128, 128,0.2);
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 2%;
+  text-align: center;
+}
+
+#showerror{
+  margin-top: 0% !important; 
+  margin-bottom: 1%;
+  padding: 1%;
+   text-align: center;
+   color: red;
+}
+#titleandname{
+  display: flex;
+ margin: 0% auto ;
+ gap: 3%;
+ width: 100%;
+
+}
+
+#title1{
+height: 45px;
+width: 25%;
+font-size: 17px;
+padding: 1%;
+border: 1px solid rgb(128, 128, 128,0.2);
+background-color: rgb(243, 243, 243);
+margin-left: 3%;
+}
+#titleandname>input{
+  width: 64%;
+  font-size: 17px;
+  padding: 1%;
+
+  border: 1px solid rgb(128, 128, 128,0.2);
+  background-color: rgb(243, 243, 243);
+}
+
+.termscond{
+  color: black;
+}
+
+#register{
+  height: 41px;
+  width: 100% !important;
+   padding: 1%;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+#welcome_aunty{
+  position: sticky;
+  width: 30%;
+  justify-content: center;
+  margin-left: 70% !important;
+  margin-top: 0% !important;
+}
+#welcome_aunty>p{
+background-color: rgb(235, 235, 235);
+padding-left: 6px;
+padding-right: 0px;
+border-radius: 20px;
+position: fixed !important;
+top: 400px;
+}
+#div_auntyimg{
+  position: fixed !important;
+  top: 440px;
+  margin: auto;
+}
+
+#cancelbtn{
+  border: 1px solid white;
+  background-color:rgb(235, 235, 235);
+  font-weight: 100;
+  text-align: right;
+}
+/* for merging *\
+
+
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Balkishan-Pal 
+MOHAMMADM-ASRAF
+/
+Tanishq-Web-Clone
+Private
+1
+0
+0
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Tanishq-Web-Clone/style.css
+@MOHAMMADM-ASRAF
+MOHAMMADM-ASRAF This commit is initialized by Mahboob Asraf
+Latest commit 6dff614 17 hours ago
+ History
+ 1 contributor
+99 lines (80 sloc)  1.3 KB
+  
+/* this is TOPNavBar1 work by Asraf */
+  
+
+#div1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 43px;
+
+}
+.one-sdv{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  
+}
+
+
+#ul1{
+  margin-left: 80px;
+}
+
+#ul2{
+  margin-right: 120px;
+}
+
+#div1 > ul > li{
+  padding: 16px 20px;
+  color: #181818;
+  font-size: 12px ;
+  font-family: sans-serif;
+  font-weight:bold;
+  text-shadow: 2px 2px 5px rgb(224, 195, 195);
+}
+.hr{
+  margin: 0px;
+  background-color:wheat;
+}
+i{
+padding: 0px 5px;
+font-size: 15px;
+}
+
+/* TopNavBar 2 */
+
+#logo{
+  margin-left: 150px;
+  width: 110px;
+  height: 60px;
+}
+
+#div2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 43px;
+  margin: 30px;
+  
+}
+
+#topnav2{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.top > li {
+  padding: 16px 20px;
+  color: #181818;
+  font-size: 13px ;
+  font-weight: bold;
+  font-family: sans-serif;
+  
+}
+
+#topnav2{
+  margin-right: 280px;
+}
+.icn-1{
+  margin-left: 80px;
+  
+}
+
+/* .icn-2{
+  margin-left: 0px 0px 50px 0px;
+} */
+
+div > img > #auto-change {
+  max-width: 100%;
+  height: auto;
+ 
+}
+#auto1{
+  margin-bottom: 100px;
+}

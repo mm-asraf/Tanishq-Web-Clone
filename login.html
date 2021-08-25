@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-SignUp Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="div-for-pic">
@@ -13,8 +16,85 @@
     </div>
 
      
-    <div id="main">
-       
+    <div id="main-for-logsign">
+
+        <div id="for-login">
+              <div class="login2">LOGIN VIA OTP    <button id="plusbtn">+</button> </div>
+                
+              
+             
+                <fieldset id="using_password" class="login1"> 
+                    <legend id="legend">LOGIN VIA EMAIL</legend>
+                    <input type="text" id="email" placeholder="EMAIL">
+                    <input type="password" id="password1" placeholder="PASSWORD">
+  
+                     <div id="remember">
+                         <input type="checkbox" id="check2">
+                      <label id="label">REMEMBER ME</label>
+                      <p id="para"><a href="#">FORGOT PASSWORD?</a></p>
+                     </div>
+                     
+                   <button class="btnlogin" onclick="login()">SUBMIT</button>
+                </fieldset>    
+                 <p id="showerror"></p>
+
+         
+             
+
+              <div id="login1" class="login2"> LOGIN VIA FACEBOOK/GOOGLE    <button id="plusbtn">+</button></div>
+        </div>
+
+        <div id="for-line"></div>
+
+        <div id="signup">
+                <p id="newuser">NEW USER? <span id="create"> CREATE AN ACCOUNT</span></p>
+                <p id="create1">Benefits of Creating an New Account</p>
+                <ul>
+                    <li>You will get Benefits from our loyalty Program called Encircle Which entitles you to earn points for your Purchase which you can redeem in Subsequent Purchases.</li>
+                    <li>You will get Special Previews to our Limited Collections and Sales.</li>
+                    <li>You will Receive offers tailor-made for you.</li>
+                </ul>
+                 
+                    <button id="btnsignup"><a href="signup.html">SIGN UP NOW</a>  </button>
+
+                    <div id="welcome_aunty">
+                        <p>How can i help you  ?<button onclick="onclickaunty()" id="cancelbtn">x</button></p>
+                        <div id="div_auntyimg"><img src="https://storage.googleapis.com/rso-offers/rsoresized.png" alt="Welcome girl"> </div>
+                    </div>
+        </div>
     </div>
+ 
+   <script>
+             function login(){
+                 let taking_email=document.getElementById("email").value;
+                 let taking_pasw=document.getElementById("password1").value;
+               
+                let fromlocal =localStorage.getItem("project_userdata") ;
+                let forcheck=JSON.parse(fromlocal);
+                console.log(forcheck)
+                console.log(forcheck.email, forcheck.password)
+                if(forcheck.email===taking_email && forcheck.password===taking_pasw){
+                    alert("Login Successfull")
+                    window.location.href="index.html"
+                }
+                else{
+                  let showerror =document.getElementById("showerror")
+                  showerror.textContent="Invalid Username or Password"
+                }
+
+             }
+       
+             
+
+             function onclickaunty(){
+            
+                 let welcome_aunty=document.getElementById("welcome_aunty")
+                 welcome_aunty.remove()
+             }
+           
+              
+   </script>
+
+    
 </body>
 </html>
