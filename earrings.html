@@ -230,15 +230,26 @@
         }
         #data{
             margin-top: 20px;
+            gap: 30px;
             display: grid;
             grid-template-areas: "auto auto auto"
                                  "auto auto auto"
                                  "auto auto auto"
                                  "auto auto auto";
         }
-        #name{
+        #hovereffect{
+            background: #fff;
+            cursor: pointer;
+        }
+
+        #hovereffect:hover{
+          box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+
+        #items_name{
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
+            cursor: pointer;
             text-align: center;
             font-weight:unset;
             letter-spacing: 1px;
@@ -255,7 +266,7 @@
             border-radius: 4px;
             color: white;
             font-size: 13px;
-           padding: 4px;
+            padding: 4px;
             font-family: 'Roboto', sans-serif;
             margin-left: 35px;
         }
@@ -299,7 +310,7 @@
         <!-- creating products content data -->
       <div id="product-cont">
          <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/272a85d9-4207-476b-b56d-57929f5aa97c/desktop/1000+x+200+blue-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-272a85d9-4207-476b-b56d-57929f5aa97c-desktop-nHdGX1B"/>
-         <div id="data"></div>
+         <div onclick="orderItems()" id="data"></div>
      </div> 
 </body>
       <!--  creating products -->
@@ -381,15 +392,16 @@
        /*  rendering data to html */
        function createData(){
            let items = document.getElementById("data");
-
+          
            products.forEach(function(product){
                let div = document.createElement("div");
+               div.id = "hovereffect";
               
                let name = document.createElement("h3");
                name.innerText = product.name;
-               name.id = "name";
+               name.id = "items_name";
 
-                let span = document.createElement("span");
+               let span = document.createElement("span");
                span.innerText = product.oldPrice;
                span.id = "price-style";
 
@@ -414,5 +426,12 @@
            })
        }
        createData();
+
+      /*  creating function when we click on the products, which will redirect to order page */
+        function  orderItems(){
+            window.open("order.html")
+        }
+       
+      
     </script>
 </html>
