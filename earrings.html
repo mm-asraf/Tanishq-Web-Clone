@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> -->
+    <title>Earrings | Buy Earring for Girls & Women Online</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #txt{
+            margin-left: 100px;
+            margin-top: 70px;
+            font-family: 'Roboto Slab', serif;
+        }
+        #box{
+            margin-top: 70px;
+            width: 290px;
+            margin-left: -10px;
+            border: 1px solid rgb(199, 191, 191);
+            color:lightgrey;
+            height: 30px;
+            text-align: center;
+            padding-top: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #filter{
+            font-size: 20px;
+            margin-top: 0px;
+            float: left;
+        }
+        #clear-all{
+            margin-left: 180px;
+            margin-top: 35px;
+            font-size: 14px;
+            color:rgb(209, 199, 199);
+            text-underline-offset: 5px;
+        }
+        #clear{
+            clear: both;
+        }
+        #filter-cont{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 30px;
+            letter-spacing: 1px;
+        }
+       /*  styles for dropdowns */
+        #dropdowns{
+            display: grid;
+            grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+            grid-template-columns: 10px;
+            font-size: 20px;
+        }  
+        /* styles for buttons */
+        button{
+            width: 340px;
+            height: 60px; 
+            border: none;
+            background-color: white; 
+            cursor: pointer;
+            text-align: left;
+            font-size: 15px;
+            margin-left: -7px;
+        }
+        #line1{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-bottom: -20px;
+            margin-top: 20px;
+        }
+        #p-btn{
+            margin-top: -20px;
+            margin-bottom: -10px;
+            height: 30px;
+            width: 270px;
+        }
+         #span1{
+            margin-left: 200px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line2{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -25px;
+        }
+        #j-btn{
+            height: 30px;
+            margin-top: -60px;
+            width: 280px;
+        }
+        #span2{
+            margin-left: 112px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line3{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -65px;
+        }
+        #t-btn{
+            height: 30px;
+            margin-top: -100px;
+            width: 270px;
+        }
+        #span3{
+            margin-left: 207px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line4{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -105px;
+        }
+        #o-btn{
+            height: 30px;
+            margin-top: -140px;
+            width: 270px;
+        }
+        #span4{
+            margin-left: 167px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line5{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -145px;
+        }
+        #pt-btn{
+            height: 30px;
+            margin-top: -180px;
+            width: 270px;
+        }
+        #span5{
+            margin-left: 194px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line6{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -185px;
+        }
+        #m-btn{
+            height: 30px;
+            margin-top: -167px;
+            width: 290px;
+        }
+        #span6{
+            margin-left: 142px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line7{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -120px;
+        }
+        #d-btn{
+            height: 30px;
+            margin-top: -105px;
+            width: 280px;
+        }
+        #span7{
+            margin-left: 122px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line8{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -60px;
+        }
+        #c-btn{
+            height: 30px;
+            margin-top: -45px;
+            width: 280px;
+        }
+        #span8{
+            margin-left: 160px; 
+            cursor: pointer;
+            font-size: 25px;
+        }
+        #line9{
+            border: 0.1px solid rgb(233, 227, 227);
+            border-width: thin;
+            height: 0px;
+            width: 290px;
+            margin-left: -10px;
+            margin-top: -2px;
+        }
+        /* styles for products */
+        #product-cont{
+            margin-left: 420px;
+            margin-top: -610px;
+        }
+        img{
+            width: 95%;
+        }
+        #data{
+            margin-top: 20px;
+            display: grid;
+            grid-template-areas: "auto auto auto"
+                                 "auto auto auto"
+                                 "auto auto auto"
+                                 "auto auto auto";
+        }
+        #name{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            text-align: center;
+            font-weight:unset;
+            letter-spacing: 1px;
+        }
+        #price-style{
+            text-decoration: line-through;
+            color: rgb(170, 165, 165);
+            font-weight: bold;
+        }
+        #charge, #text{
+            background-color: #e9c456;
+            text-align: center;
+            width: 230px;
+            border-radius: 4px;
+            color: white;
+            font-size: 13px;
+           padding: 4px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 35px;
+        }
+        #text{
+            width: 130px;
+            margin-left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div id="txt">
+        <h3>FOUND 4155 EARRINGS DESIGNS</h3>
+        <div id="box">COMPARE</div>
+        <!-- Creating filter source -->
+        <div id="filter-cont">
+            <div id="filter">Filter By</div>
+            <div id="clear-all"><u>CLEAR ALL</u></div>
+            <div id="clear"></div>
+        </div>
+        <!-- creating dropdowns for filters -->
+            <div id="dropdowns">
+                <div id="line1"></div>
+                <button id="p-btn"><b>PRICE</b><span id="span1">+</span></button> 
+                <div id="line2"></div> 
+                <button id="j-btn"><b>JEWELLERY TYPE</b><span id="span2">+</span></button>
+                <div id="line3"></div>
+                <button id="t-btn"><b>TYPE</b><span id="span3">+</span></button>
+                <div id="line4"></div>
+                <button id="o-btn"><b>OCCASION</b><span id="span4">+</span></button>
+                <div id="line5"></div>
+                <button id="pt-btn"><b>PURITY</b><span id="span5">+</span></button>
+                <div id="line6"></div>
+                <button id="m-btn"><b>METAL COLOR</b><span id="span6">+</span></button>
+                <div id="line7"></div>
+                <button id="d-btn"><b>DIMOND CLARITY</b><span id="span7">+</span></button>
+                <div id="line8"></div>
+                <button id="c-btn"><b>COMMUNITY</b><span id="span8">+</span></button>
+                <div id="line9"></div>
+        </div>
+    </div>
+        <!-- creating products content data -->
+      <div id="product-cont">
+         <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/272a85d9-4207-476b-b56d-57929f5aa97c/desktop/1000+x+200+blue-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-272a85d9-4207-476b-b56d-57929f5aa97c-desktop-nHdGX1B"/>
+         <div id="data"></div>
+     </div> 
+</body>
+      <!--  creating products -->
+    <script>
+        const products = [
+            {
+                name:"Odessa Pearl Stud Earrings",
+                newPrice:"₹17188",
+                oldPrice:"₹17429",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/502217SEDABAPL_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Ageless Ruby Stud Earrings",
+                newPrice:"₹34989",
+                oldPrice:"₹35496",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/512318SAXABA18_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Kalika Floral Stud Earrings",
+                newPrice:"₹34557",
+                oldPrice:"₹35078",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/512217SCKABA40_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Alina Pearl Stud Earrings",
+                newPrice:"₹23075",
+                oldPrice:"₹23434",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/502217SEGABAPL_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Medha Ruby Stud Earrings",
+                newPrice:"₹18181",
+                oldPrice:"₹18466",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/503216SBHABA18_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Mrigakshi Traditional Earrings",
+                newPrice:"₹62200",
+                oldPrice:"₹63181",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/511183DQEABA40_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Laysa Geometric Stud Earrings",
+                newPrice:"₹25309",
+                oldPrice:"₹25434",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/512217SABABA40_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Suhani Floral Stud Earrings",
+                newPrice:"₹32977",
+                oldPrice:"₹33500",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/512318SBFABA18_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Admirable Ruby Drop Earrings",
+                newPrice:"₹62407",
+                oldPrice:"₹63400",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/512318DBQABA18_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Seerat Ruby Stud Earrings",
+                newPrice:"₹30481",
+                oldPrice:"₹30975",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/501095SABABA12_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Janaya Ruby Drop Earrings",
+                newPrice:"₹46998",
+                oldPrice:"₹47764",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/512814DQYABA18_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+            {
+                name:"Kauvery Floral Drop Earrings",
+                newPrice:"₹50683",
+                oldPrice:"₹51524",
+                image:"https://staticimg.titan.co.in/Tanishq/Catalog/512814DPFABA18_1.jpg?impolicy=pqmed&imwidth=640",
+            },
+        ]
+       /*  rendering data to html */
+       function createData(){
+           let items = document.getElementById("data");
+
+           products.forEach(function(product){
+               let div = document.createElement("div");
+              
+               let name = document.createElement("h3");
+               name.innerText = product.name;
+               name.id = "name";
+
+                let span = document.createElement("span");
+               span.innerText = product.oldPrice;
+               span.id = "price-style";
+
+               let price = document.createElement("h3");
+               price.innerText = product.newPrice + " , ";
+               price.append(span);
+               price.style.textAlign = "center";
+
+               let image = document.createElement("img");
+               image.src = product.image;
+
+               let charge = document.createElement("p");
+               charge.innerText = "10 % OFF ON MAKING CHARGES";
+               charge.id = "charge";
+
+               let text = document.createElement("p");
+               text.innerText = "TRY ON AVAILABLE";
+               text.id = "text";
+
+            div.append(image, name, price, charge, text);
+            items.append(div);
+           })
+       }
+       createData();
+    </script>
+</html>
