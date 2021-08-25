@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUP Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="obj.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -39,47 +40,7 @@
                  <p id="showerror" ></p>   
      </fieldset>
         
-    <script>
-
-      function regsiterClick(){
-          let title =document.getElementById("title1").value;
-         let f_name=document.getElementById("firstname").value;
-         let l_name=document.getElementById("lastname").value;
-         let mob_num=document.getElementById("mobnumber").value;
-         let email=document.getElementById("email").value;
-         let password=document.getElementById("password").value;
-         let checkdon=document.getElementById("checkboxid").checked;
-        //   console.log(title,f_name,l_name,mob_num,email,password)
-
-        const userdata =
-            {
-                title:title,
-                first_name:f_name,
-                last_name:l_name,
-                mobile:mob_num,
-                email:email,
-                password:password,
-                checkdon:checkdon,
-            } ;
-          console.log(userdata)
-             if(title.trim()=="" || f_name.trim()=="" || l_name.trim()=="" || mob_num.trim()=="" || email.trim()=="" || password.trim()=="" || checkdon==false){
-                 let showerror =document.getElementById("showerror")
-                 showerror.textContent="Please fill all the detail fields and check on checkbox";
-                 showerror.style.color="red"
-             }
-             else{
-                let showerror =document.getElementById("showerror")
-                  showerror.textContent="SignUp Successfull"
-                  showerror.style.color="green"
-                // alert("Signup successfull")
-                window.location.href="login.html";
-                const userdata_projectjson=JSON.stringify(userdata);
-                localStorage.setItem("project_userdata" ,userdata_projectjson)
-             }
-      }
-
-       
-    </script>
+    
 
 </body>
 </html>

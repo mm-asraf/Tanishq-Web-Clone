@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-SignUp Page</title>
+    <script src="obj.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,39 +63,6 @@
                         <div id="div_auntyimg"><img src="https://storage.googleapis.com/rso-offers/rsoresized.png" alt="Welcome girl"> </div>
                     </div>
         </div>
-    </div>
- 
-   <script>
-             function login(){
-                 let taking_email=document.getElementById("email").value;
-                 let taking_pasw=document.getElementById("password1").value;
-               
-                let fromlocal =localStorage.getItem("project_userdata") ;
-                let forcheck=JSON.parse(fromlocal);
-                console.log(forcheck)
-                console.log(forcheck.email, forcheck.password)
-                if(forcheck.email===taking_email && forcheck.password===taking_pasw){
-                    alert("Login Successfull")
-                    window.location.href="index.html"
-                }
-                else{
-                  let showerror =document.getElementById("showerror")
-                  showerror.textContent="Invalid Username or Password"
-                }
-
-             }
-       
-             
-
-             function onclickaunty(){
-            
-                 let welcome_aunty=document.getElementById("welcome_aunty")
-                 welcome_aunty.remove()
-             }
-           
-              
-   </script>
-
-    
+    </div>    
 </body>
 </html>
