@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordering Page</title>
+    <title>Ageless Ruby Stud Earrings | Tanishq</title>
     <style>
         *{
             font-family: sans-serif;
@@ -17,7 +17,7 @@
         #home-btn{
             border: none;
             margin-right: -3px;
-            color: rgb(189, 185, 185);
+            color: #8c8c8c;
             background-color: white;
             float: left;
             cursor: pointer;
@@ -28,7 +28,7 @@
             margin-left: 8px;
             margin-right: 7px;
             margin-top: 1px;
-            color: rgb(189, 185, 185);
+            color: #8c8c8c;
         }
         #text1{
             float: left;
@@ -38,13 +38,13 @@
         #text2{
             font-size: 13px;
         }
-        img{
+        #picture{
             max-width: 30%;
             margin-left: -40px;
             float: left;
         }
         #matter-txt{
-            margin-left: 700px;
+            margin-left: 670px;
             letter-spacing: 1px;
         }
         #item_name{
@@ -52,30 +52,132 @@
             letter-spacing: normal;
         }
         #price_txt{
-            color: rgb(189, 185, 185);
+            color: #8c8c8c;
             letter-spacing: normal;
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
             margin-top: 13px;
-            float: left;
         }
         #price_num{
             margin-top: 13px;
             margin-left: 10px;
             text-decoration: 2px line-through;
-            color: rgb(189, 185, 185);
-            float: left;
+            color: #8c8c8c;
         }
         #offer_price{
             letter-spacing: normal;
             margin-top: 10px;
             margin-left: 10px;
             font-size: 21px;
-            float: left;
+            color: black;
         }
         #new_Price{
-            margin-left: 310px;
+            margin-left: 10px;
             margin-top: 12px;
+            color: black;
+        }
+        #taxes{
+            font-size: 14px;
+            margin-top: -4px;
+            color: #8c8c8c;
+            letter-spacing: normal;
+        }
+        #p-break{
+            margin-left: 5px;
+            color: #b0a16e;
+            font-size: 13px;
+        }
+        #weight-txt{
+            letter-spacing: normal;
+            font-size: 12px;
+            color: #8c8c8c;
+            margin-top: 12px;
+        }
+        #discount, #try{
+            font-size: 12px;
+            background-color: #e9c456;
+            color: white;
+            width: 220px;
+            margin-top: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+        #try{
+            width: 150px;
+        }
+        #parah{
+            font-size: 15px;
+            letter-spacing: normal;
+            line-height: 25px;
+        }
+        #pd{
+            color: #b0a16e;
+            font-size: 15px;
+        }
+        #gw{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        #quantity{
+             margin-left: 430px;
+        }
+        #net-qty{
+            font-size: 13px;
+            margin-top: -80px;
+            font-weight: normal;
+        }
+        #minus{
+            width: 20px;
+            height: 10px;
+            margin-top: 15px;
+            width: 70px;
+            height: 40px;
+        }
+        #gram-btn{
+            margin-top: 20px;
+            width: 350px;
+            height: 55px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            background-color: white;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        #try-on{
+            width: 140px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+            border: none;
+             cursor: pointer;
+        }
+        #add-cart{
+            margin-left: 20px;
+            width: 190px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #booking{
+            margin-left: 30px;
+            height: 50px;
+            width: 220px;
+            background-color: white;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        #correct{
+            margin-left: 70px;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+        #items-left{
+            font-size: 12px;
+            font-weight: normal;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -88,22 +190,56 @@
       <div id="text2">Ageless Ruby Stud Earrings</div>
     </div>
 
-        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/512318SAXABA18_1.jpg?impolicy=pqmed&imwidth=640"/>
+        <img id="picture" src="https://staticimg.titan.co.in/Tanishq/Catalog/512318SAXABA18_1.jpg?impolicy=pqmed&imwidth=640"/>
 
         <div id="matter-txt">
             <h5>512318SAXABA182BA005239</h5>
             <div id="item_name">Ageless Ruby Stud Earrings</div>
-            <h2 id="price_txt">PRICE</h2>
-            <h3 id="price_num">₹35 531</h3>
-            <h2 id="offer_price">OFFER PRICE</h2>
-            <h3 id="new_Price">₹35 023.00</h3>
-        
+            <h2 id="price_txt">PRICE<span id="price_num">₹35 531</span><span id="offer_price">OFFER PRICE</span><span id="new_Price">₹35 023.00</span></h2>
+            <div id="taxes">(Incl. of all taxes)<span><a href="Price breakup" id="p-break">Price breakup</a></span></div>
+            <div id="weight-txt">*Weight and Price may vary subject to the stock available.</div>
+            <h4 id="discount">10 % OFF ON MAKING CHARGES</h4>
+            <h4 id="try">TRY ON AVAILABLE</h4>
+            <p id="parah">Add grace and charm to your special ensembles with these floral stud</br>earrings crafted in 22 Karat Yellow Gold and studded with rubies.</p>
+            <a href="#" id="pd">Product details</a>
+            <div id="gw">Gross Weight</div>
+            <button id="gram-btn">5.500g</button>
+            <div id="quantity">
+            <h4 id="net-qty">Net Qty</h4>
+            <h3 id="minus">-<span id="qty">1 N</span><span id="plus">+</span></h3>
+            </div>
+            <div id="btns">
+            <button id="try-on">TRY ON</button>
+            <button id="add-cart" onclick="addToCart()" >ADD TO CART</button>
+            <button id="booking">BOOK AN APPOINTMENT</button>
+            </div>
+            <p id="correct">✓<span id="items-left">ONLY 1 LEFT IN STOCK</span></p>
         </div>
         
 
 </body>
-  
     <script>
+        
+         if(localStorage.getItem("add-cart") === null){ 
+            localStorage.setItem("add-cart", JSON.stringify([]));
+        } 
+        const cart_data =[];
 
+        function addToCart(){
+            /* pushing the data into the local storage */
+            let name = document.getElementById("item_name").innerHTML;
+            console.log(name);
+            let price = document.getElementById("new_Price").innerHTML;
+            let image = document.getElementById("picture").src;
+
+            const data = {
+                name: name,
+                price: price,
+                image: image,
+            }
+            cart_data.push(data);
+
+            localStorage.setItem("add-cart", JSON.stringify(cart_data));
+        }
     </script>
 </html>
