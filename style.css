@@ -50,9 +50,11 @@ cursor: pointer;
 /* TopNavBar 2 */
 
 #logo{
-    margin-left: 150px;
-    width: 110px;
-    height: 60px;
+    margin-left: 120px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    width: 121px;
+    height: 58px;
 }
 
 #div2{
@@ -309,7 +311,7 @@ font-weight:700
 
 .top-footer{
     background-color: #b0a16e;
-    height: 130vh;
+    height: 110vh;
    
    
     
@@ -375,16 +377,22 @@ font-weight: 400;
     font-family: "playfair display";
     
 }
+#ft-head{
+    font-size: 20px;
+    font-weight: 400;
+}
 
 .first-items > ul > li,.second-items > ul > li,.third-items > ul > li{
     list-style-type: none;
     text-decoration: none;
     padding: 10px;
+    
 }
 
 ul > .ft-itms{
     margin-bottom: 50px;
    margin-left: 20px;
+
 
 
    /* line-height: 50px; */
@@ -450,9 +458,11 @@ ul > .ft-itms{
 .last{
     display: flex;
     justify-content: space-evenly;
-    margin: 30px;
-    background-color: #b0a16e;
-    color: #b0a16e;
+    align-items: center;
+    padding: 8px;
+    margin: 3px;
+    background-color: rgb(176, 161, 110);
+    color: rgb(176, 161, 110);
 }
 
 #width{
@@ -511,3 +521,88 @@ placeholder{
 #faicon:hover{
 color: #ccc;
 }
+
+
+
+/* Dropdown */
+.navbar{
+    overflow: hidden;
+    
+}
+
+/* .navbar a {
+    
+} */
+
+.dropdown{
+    display: right;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    border: none;
+  outline: none;
+  color: white;
+  font-size: 12px;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.dropbtn{
+    font-size: 10px;
+}
+
+.navbar a:hover,dropdown:hover .dropbtn{
+    color: rgb(197, 14, 45);
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    left: 0;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content .header {
+    /* background: #f9f9f9; */
+    padding-bottom: 20px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #fafafa;
+    height: 450px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 12px;
+    padding-bottom: 10PX;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .column a:hover {
+    color: #181818;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+
+
+
+
+
+  
