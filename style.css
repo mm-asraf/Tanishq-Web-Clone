@@ -37,10 +37,10 @@
     font-weight:bold;
     text-shadow: 2px 2px 5px rgb(224, 195, 195);
 }
-.hr{
+/* .hr{
     margin: 0px;
     background-color:wheat;
-}
+} */
 i{
 padding: 0px 5px;
 font-size: 15px;
@@ -78,6 +78,9 @@ cursor: pointer;
     font-family: sans-serif;
     
 }
+#div2 > ul > li :hover{
+    color: #000000;
+}
 
 #topnav2{
     margin-right: 280px;
@@ -106,4 +109,405 @@ a {
     text-decoration: none;
     opacity: 0.7;
     color: #181818;
+}
+h1{
+    font-family:  'Playfair Display', serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+ .exlus{
+    display: flex;
+    /* justify-content: space-evenly; */
+   margin-left: 240px;
+  margin-right: 240px;
+   
+}
+
+#heading1{
+    text-align: center;
+    height: 30px;
+}
+
+.fimg{
+    padding: 10px;
+}
+.simg{
+    padding: 10px;
+    
+}
+.timg{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.banner{
+    display: flex;
+    float: right;
+}
+
+/* .cont1{
+    background-image: url("https://staticimg.titan.co.in/Tanishq/Banners/rivaah/images/banner/Tamil/Nayanatara_tamil.jpg");
+    height: 63vh;
+    background-position: top-left 14%;
+    background-position-x: left 14% ;
+    background-position-y:top ;
+    /* margin: 30px 0px; 
+    
+}  
+*/
+
+/* banner img */
+
+.rivaah{
+    width: auto;
+    height: 500px;
+}
+#riva{
+    float: right;
+    width: 18%;
+    margin-right: 275px;
+    margin-top: 20px;
+}
+.mid{
+    margin-right: 100px;
+}
+
+.mid-para{
+    text-align: center;
+    margin-left: 880px;
+    margin-right: 370px;
+}
+
+.btn{
+  
+    float: right;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+.btn-bg{
+    width: 260px;
+    height: 50px;
+    color: white;
+    background-color: #000000;
+    border: 1px solid #181818;
+}
+.bg1{
+    background-color: white;
+    color: black;
+    border: 1px solid #181818;
+}
+
+
+/* popup */
+
+
+/*----------------------------------------------
+CSS settings for HTML div Exact Center
+------------------------------------------------*/
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+.mids{
+    font-family: "playfair display";
+    font-weight: bold;
+}
+.mids1{
+    font-family: "playfair display";
+    font-weight: 400;
+}
+
+
+
+img #close {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+}
+div #popupContact {
+position:absolute;
+left:45%;
+top:17%;
+margin-left:-202px;
+font-family:  'Playfair Display', serif;
+}
+
+#form {
+max-width:600px;
+min-width:300px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+.p-tg {
+margin-top:30px
+}
+#h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text],input[type=email],input[type=tel] {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:rgb(194, 107, 107);
+color:white;
+border:1px solid #181818;
+padding:10px 0;
+margin-top: 20px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+
+/* span {
+color:red;
+font-weight:700
+} */
+
+.three-el{
+    background-color: #f2f0e8;
+    height: 35vh;
+    width: 100%;
+    height: auto;
+    /* margin-top: 40px; */
+    display: inline-block;
+}
+
+.top-footer{
+    background-color: #b0a16e;
+    height: 130vh;
+   
+   
+    
+}
+.three-el{
+display: grid;
+grid-template-columns: auto auto auto;
+text-align: center;
+height: 180px;
+justify-content: center;
+align-items: center;
+
+}
+.one-el{
+padding: 20px;
+font-family:  "playfair display";
+font-weight: 400;
+
+}
+.one el > h3{
+    font-family: "playfair display";
+
+}
+.one-el > p {
+    font-family: "playfair display";
+    font-weight: 400;
+}
+#ftr{
+    margin-top: 50px;
+}
+
+/* footer */
+.in-foot{
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+
+}
+.ft-tg{
+    text-align: center;
+}
+.class-btn1{
+    height: 52px;
+    width: 300px;
+    margin: 20px;
+    background-color: #b0a16e;
+    border: 1px solid white;
+    color: white;
+    
+}
+
+#line{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.foot-cont{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    color: white;
+    font-family: "playfair display";
+    
+}
+
+.first-items > ul > li,.second-items > ul > li,.third-items > ul > li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul > .ft-itms{
+    margin-bottom: 50px;
+   margin-left: 20px;
+
+
+   /* line-height: 50px; */
+   font-weight: bold;
+}
+#ft-mail{
+    width: 300px;
+    height: 52px;
+    border: 1px solid white;
+    color: white;
+    background-color: #b0a16e
+}
+.btn-cls{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+#t-btn{
+    width: 100px;
+    height: 52px;
+    margin-top: 30px;
+    border: 1px solid white;
+    background-color: white;
+    color: #b0a16e
+}
+#follo{
+    margin-top: 21px;
+}
+
+.socialmedia{
+    display: flex;
+    padding: 30px;
+}
+
+#faicon{
+    padding: 20px;
+    margin-left: 10px;
+}
+
+#app{
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#termscon{
+    display: flex;
+    justify-content: space-around;
+    font-size: 11px;
+}
+
+#copyright{
+    display: flex;
+    font-size: 11px;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding: 5px;
+}
+#copy{
+    padding: 2px;
+}
+
+.last{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    background-color: #b0a16e;
+    color: #b0a16e;
+}
+
+#width{
+    width: 60px;
+    height: 40px;
+    background-color: #b0a16e;
+    color: #b0a16e;
+}
+
+.same2{
+    height: 10px;
+}
+.width2{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* Terms and conditions */
+.tandc{
+    color: white;
+}
+.tandc:hover{
+    color: black;
+}
+
+#im-app:hover{
+    color: pink;
+}
+
+.pt-tg{
+    font-family: "playfair display";
+    font-size: 18px;
+}
+placeholder{
+    color: white;
+}
+
+#ft-city1{
+    width: 300px;
+    height: 52px;
+    border: 1px solid white;
+    color: white;
+    background-color: #b0a16e
+}
+
+#t-btn1{
+    width: 100px;
+    height: 52px;
+    margin-top: 30px;
+    border: 1px solid white;
+    background-color: white;
+    color: #b0a16e;
+    margin-right: 80px;
+}
+
+#faicon:hover{
+color: #ccc;
 }
