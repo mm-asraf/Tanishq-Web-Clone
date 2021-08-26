@@ -58,9 +58,13 @@
             font-family: 'Roboto', sans-serif;
             margin-top: 13px;
         }
-        #price_num{
-            margin-top: 13px;
+        #rupee_sym1{
             margin-left: 10px;
+            color: #8c8c8c;
+            margin-top: 13px;
+        }
+        #old-price{
+            margin-top: 13px;
             text-decoration: 2px line-through;
             color: #8c8c8c;
         }
@@ -71,8 +75,12 @@
             font-size: 21px;
             color: black;
         }
-        #new_Price{
+        #rupee_sym2{
             margin-left: 10px;
+            margin-top: 12px;
+            color: black;
+        }
+        #new_Price{
             margin-top: 12px;
             color: black;
         }
@@ -195,7 +203,7 @@
         <div id="matter-txt">
             <h5>512318SAXABA182BA005239</h5>
             <div id="item_name">Ageless Ruby Stud Earrings</div>
-            <h2 id="price_txt">PRICE<span id="price_num">₹35 531</span><span id="offer_price">OFFER PRICE</span><span id="new_Price">₹35 023.00</span></h2>
+            <h2 id="price_txt">PRICE<span id="rupee_sym1">₹</span><span id="old-price">35531</span><span id="offer_price">OFFER PRICE</span><span id="rupee_sym2">₹</span><span id="new_Price">35023.00</span></h2>
             <div id="taxes">(Incl. of all taxes)<span><a href="Price breakup" id="p-break">Price breakup</a></span></div>
             <div id="weight-txt">*Weight and Price may vary subject to the stock available.</div>
             <h4 id="discount">10 % OFF ON MAKING CHARGES</h4>
@@ -228,7 +236,6 @@
         function addToCart(){
             /* pushing the data into the local storage */
             let name = document.getElementById("item_name").innerHTML;
-            console.log(name);
             let price = document.getElementById("new_Price").innerHTML;
             let image = document.getElementById("picture").src;
 
