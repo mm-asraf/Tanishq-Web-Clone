@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ageless Ruby Stud Earrings | Tanishq</title>
+    <title id="title"></title>
     <style>
         *{
             font-family: sans-serif;
@@ -46,6 +46,12 @@
         #matter-txt{
             margin-left: 670px;
             letter-spacing: 1px;
+        }
+        #rating{
+            margin-left: 200px;
+            font-size: 20px;
+            color:#c09f6c;
+            cursor: pointer;
         }
         #item_name{
             font-size: 22px;
@@ -134,12 +140,23 @@
             margin-top: -80px;
             font-weight: normal;
         }
+        #qty{
+            font-size: 25px;
+            padding: 8px;
+            border: 1px solid black;
+            font-weight: normal;
+        } 
         #minus{
-            width: 20px;
-            height: 10px;
-            margin-top: 15px;
-            width: 70px;
-            height: 40px;
+            margin-top: 50px;
+            margin-left: -12px;
+            font-size: 30px;
+            font-weight: normal;
+            margin-right: 3px;
+            color: #8c8c8c;
+        }
+        #plus{
+            margin-left: 3px;
+            color: #8c8c8c;
         }
         #gram-btn{
             margin-top: 20px;
@@ -198,12 +215,11 @@
       <div id="text2">Ageless Ruby Stud Earrings</div>
     </div>
 
-        <img id="picture" src="https://staticimg.titan.co.in/Tanishq/Catalog/512318SAXABA18_1.jpg?impolicy=pqmed&imwidth=640"/>
-
+        <img id="picture" src=""/>
         <div id="matter-txt">
-            <h5>512318SAXABA182BA005239</h5>
-            <div id="item_name">Ageless Ruby Stud Earrings</div>
-            <h2 id="price_txt">PRICE<span id="rupee_sym1">₹</span><span id="old-price">35531</span><span id="offer_price">OFFER PRICE</span><span id="rupee_sym2">₹</span><span id="new_Price">35023.00</span></h2>
+            <h5>512318SAXABA182BA005239<span id="rating">☆☆☆☆☆</span><span>Write a review</span></h5>
+            <div id="item_name"></div>
+            <h2 id="price_txt">PRICE<span id="rupee_sym1">₹</span><span id="old-price"></span><span id="offer_price">OFFER PRICE</span><span id="rupee_sym2">₹</span><span id="new_Price"></span></h2>
             <div id="taxes">(Incl. of all taxes)<span><a href="Price breakup" id="p-break">Price breakup</a></span></div>
             <div id="weight-txt">*Weight and Price may vary subject to the stock available.</div>
             <h4 id="discount">10 % OFF ON MAKING CHARGES</h4>
@@ -214,7 +230,7 @@
             <button id="gram-btn">5.500g</button>
             <div id="quantity">
             <h4 id="net-qty">Net Qty</h4>
-            <h3 id="minus">-<span id="qty">1 N</span><span id="plus">+</span></h3>
+            <h3><span id="minus">-</span><span id="qty">1N</span><span id="plus">+</span></h3>
             </div>
             <div id="btns">
             <button id="try-on">TRY ON</button>
@@ -248,5 +264,13 @@
 
             localStorage.setItem("add-cart", JSON.stringify(cart_data));
         }
+        let data = localStorage.getItem("show_item");
+        let data_obj = JSON.parse(data);
+        document.getElementById("title").innerHTML = data_obj.name + " | Tanishq";
+        document.getElementById("item_name").innerHTML = data_obj.name;
+        document.getElementById("picture").src = data_obj.image;
+        document.getElementById("old-price").innerHTML = data_obj.oldPrice;
+        document.getElementById("new_Price").innerHTML = data_obj. newPrice;
+
     </script>
 </html>
