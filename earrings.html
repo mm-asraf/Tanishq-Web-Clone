@@ -131,7 +131,8 @@
     }
     #data{
         margin-top: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 400px;
+        margin-right: 30px;
         gap: 30px;
         display: grid;
         grid-template-areas: "auto auto auto"
@@ -702,7 +703,7 @@
         <div id="sellers">BEST SELLERS<span id="stand">|</span><span>NEW ARRIVALS</span><span id="stand">|</span><span>POPULARITY</span><span id="stand">|</span><span id="dis">DISCOUNT</span><span id="stand">|</span><span>PRICE</span></div>
     </div>
     <img id="pic" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/272a85d9-4207-476b-b56d-57929f5aa97c/desktop/1000+x+200+blue-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-272a85d9-4207-476b-b56d-57929f5aa97c-desktop-nHdGX1B"/>
-    <div  id="data"></div>
+    <div id="data"></div>
 </div>
 </div>
 </body>
@@ -716,7 +717,7 @@
             },
             {
                 name:"Ageless Ruby Stud Earrings",
-                newPrice:34989,
+                newPrice:35023,
                 oldPrice:35496,
                 image:"https://staticimg.titan.co.in/Tanishq/Catalog/512318SAXABA18_1.jpg?impolicy=pqmed&imwidth=640",
             },
@@ -782,11 +783,11 @@
             },
         ]
         function createData(){
-           let items = document.getElementById("data");
+           let data = document.getElementById("data");
           
            products.forEach(function(product){
-               let div = document.createElement("button");
-               div.id = "hovereffect";
+               let div1 = document.createElement("button");
+               div1.id = "hovereffect";
               
                let name = document.createElement("h3");
                name.innerText = product.name;
@@ -817,12 +818,12 @@
                text.innerText = "TRY ON AVAILABLE";
                text.id = "text";
 
-               div.onclick = function(){
+               div1.onclick = function(){
                     showItem(product);
                }
 
-            div.append(image, name, price, charge, text);
-            items.append(div);
+            div1.append(image, name, price, charge, text);
+            data.append(div1);
            })
        }
        createData();
@@ -841,6 +842,7 @@
             } 
         });
     }
+   
   /*  creating function when we click on the products, which will redirect to order page */
         function  showItem(product){
             localStorage.setItem("show_item", JSON.stringify(product));

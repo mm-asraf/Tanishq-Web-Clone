@@ -600,7 +600,7 @@
       <div id="arrow">></div>
       <div id="text1">PRODUCT</div>
       <div id="arrow">></div>
-      <div id="text2">Ageless Ruby Stud Earrings</div>
+      <div id="text2"></div>
     </div>
 
         <img id="picture" src=""/>
@@ -627,13 +627,10 @@
             </div>
             <p id="correct">✓<span id="items-left">ONLY 1 LEFT IN STOCK</span></p>
         </div>
-        
-
-
 </body>
     <script>
         
-         if(localStorage.getItem("add-cart") === null){ 
+        if(localStorage.getItem("add-cart") === null){ 
             localStorage.setItem("add-cart", JSON.stringify([]));
         } 
         const cart_data =[];
@@ -659,7 +656,8 @@
         document.getElementById("item_name").innerHTML = data_obj.name;
         document.getElementById("picture").src = data_obj.image;
         document.getElementById("old-price").innerHTML = data_obj.oldPrice;
-        document.getElementById("new_Price").innerHTML = data_obj. newPrice;
+        document.getElementById("new_Price").innerHTML = data_obj.newPrice;
+        document.getElementById("text2").innerHTML = data_obj.name;
 
     </script>
 </html>
