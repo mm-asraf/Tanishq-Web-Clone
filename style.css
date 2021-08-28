@@ -72,12 +72,12 @@
 .icn-1{
     margin-left: 80px;
     width: 10px;
-    
+    cursor: pointer;
 }
 
-/* .icn-2{
-    margin-left: 0px 0px 50px 0px;
-} */
+ .icn-2{
+   cursor: pointer;
+} 
 #slide-img{
     width:100.5%;
     height:auto;
@@ -112,8 +112,8 @@ div > img > #auto-change {
  .exlus{
     display: flex;
     /* justify-content: space-evenly; */
-   margin-left: 240px;
-  margin-right: 240px;
+    justify-content: center;
+    cursor: pointer;
    
 }
 
@@ -143,136 +143,46 @@ div > img > #auto-change {
 /* banner img */
 
 .rivaah{
-    width: auto;
-    height: 500px;
+    height: 400px;
 }
 #riva{
-    float: right;
     width: 18%;
     margin-right: 275px;
     margin-top: 20px;
 }
 .mid{
-    margin-right: 100px;
+    width: 95%;
+    margin-bottom: 10px;
+    margin-left: 850px;
 }
 
-.mid-para{
+#mid-para{
     text-align: center;
-    margin-left: 880px;
-    margin-right: 370px;
+    margin-left: 700px;
+    margin-top: -10px;
+    font-weight: inherit;
+    margin-right: 100px;
+    line-height: 30px;
+    font-family: sans-serif;
 }
-
-.btn{
-  
-    float: right;
-    margin-right: 250px;
+.arrange-btn{
+    margin-left: 710px;
     margin-top: 20px;
+   
 }
 .btn-bg{
     width: 260px;
     height: 50px;
     color: white;
     background-color: #000000;
-    border: 1px solid #181818;
+    border: 1px solid #181818; 
+    cursor: pointer;
 }
 .bg1{
     background-color: white;
     color: black;
     border: 1px solid #181818;
-}
-
-
-/* popup */
-
-
-/*----------------------------------------------
-CSS settings for HTML div Exact Center
-------------------------------------------------*/
-#abc {
-width:100%;
-height:100%;
-opacity:.95;
-top:0;
-left:0;
-display:none;
-position:fixed;
-background-color:#313131;
-overflow:auto
-}
-
-.mids{
-    font-family: "playfair display";
-    font-weight: bold;
-}
-.mids1{
-    font-family: "playfair display";
-    font-weight: 400;
-}
-
-
-
-img #close {
-position:absolute;
-right:-14px;
-top:-14px;
-cursor:pointer
-}
-div #popupContact {
-position:absolute;
-left:45%;
-top:17%;
-margin-left:-202px;
-font-family:  'Playfair Display', serif;
-}
-
-#form {
-max-width:600px;
-min-width:300px;
-padding:10px 50px;
-border:2px solid gray;
-border-radius:10px;
-font-family:raleway;
-background-color:#fff
-}
-.p-tg {
-margin-top:30px
-}
-#h2 {
-background-color:#FEFFED;
-padding:20px 35px;
-margin:-10px -50px;
-text-align:center;
-border-radius:10px 10px 0 0
-}
-hr {
-margin:10px -50px;
-border:0;
-border-top:1px solid #ccc;
-width: 1390px
-}
-input[type=text],input[type=email],input[type=tel] {
-width:82%;
-padding:10px;
-margin-top:30px;
-border:1px solid #ccc;
-padding-left:40px;
-font-size:16px;
-font-family:raleway
-}
-
-#submit {
-text-decoration:none;
-width:100%;
-text-align:center;
-display:block;
-background-color:rgb(194, 107, 107);
-color:white;
-border:1px solid #181818;
-padding:10px 0;
-margin-top: 20px;
-font-size:20px;
-cursor:pointer;
-border-radius:5px
+    cursor: pointer;
 }
 
 /* span {
@@ -282,19 +192,16 @@ font-weight:700
 
 .three-el{
     background-color: #f2f0e8;
-    height: 35vh;
-    width: 100%;
+   /*  height: 35vh;
+    width: 100%; */
     height: auto;
-    /* margin-top: 40px; */
-    display: inline-block;
+    margin-top: 2000px; 
+   /*  display: inline-block; */
 }
 
 .top-footer{
     background-color: #b0a16e;
-    height: 110vh;
-   
-   
-    
+   /*  height: 110vh; */
 }
 .three-el{
 display: grid;
@@ -365,7 +272,7 @@ font-weight: 400;
 .first-items > ul > li,.second-items > ul > li,.third-items > ul > li{
     list-style-type: none;
     text-decoration: none;
-    padding: 10px;
+   margin-left: 750px;
     
 }
 
@@ -557,7 +464,7 @@ color: #ccc;
 
   .column {
     float: left;
-    width: 33.33%;
+    width: 30%;
     padding: 10px;
     background-color: #fafafa;
     height: 450px;

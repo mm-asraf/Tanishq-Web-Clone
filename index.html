@@ -7,66 +7,865 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanishq</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="obj.js"></script>
     <script src="https://kit.fontawesome.com/da2d034d86.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        #h2vikas{
+          text-align:center;
+          padding: 20px;
+          font-size: 30px;
+          opacity: 0.8;
+          font-family: "playfair display";
+        }
+
+        .container > section{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .slide{
+            margin:0px 10px 0px 20px;
+             text-decoration: none;
+        }
+
+
+        .imgchange{
+            width: 110px;
+            
+        }
+        /* Slider */
+        
+        .slick-slide {
+            margin: 0px 20px;
+        }
+        
+        .slick-slide img {
+            width: 50%;
+        }
+        
+        .slick-slider
+        {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                    user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+                touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .slick-list
+        {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .slick-list:focus
+        {
+            outline: none;
+        }
+        .slick-list.dragging
+        {
+            cursor: pointer;
+            cursor: hand;
+        }
+        
+        .slick-slider .slick-track,
+        .slick-slider .slick-list
+        {
+            -webkit-transform: translate3d(0, 0, 0);
+               -moz-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                 -o-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+        }
+        
+        .slick-track
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        .slick-track:before,
+        .slick-track:after
+        {
+            display: table;
+            content: '';
+        }
+        .slick-track:after
+        {
+            clear: both;
+        }
+        .slick-loading .slick-track
+        {
+            visibility: hidden;
+        }
+        
+        .slick-slide
+        {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        [dir='rtl'] .slick-slide
+        {
+            float: right;
+        }
+        .slick-slide img
+        {
+            display: block;
+        }
+        .slick-slide.slick-loading img
+        {
+            display: none;
+        }
+        .slick-slide.dragging img
+        {
+            pointer-events: none;
+        }
+        .slick-initialized .slick-slide
+        {
+            display: block;
+        }
+        .slick-loading .slick-slide
+        {
+            visibility: hidden;
+        }
+        .slick-vertical .slick-slide
+        {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+        #exclusive{
+            text-align: center;
+        }
+        
+     </style>
+
 </head>
 
 <body>
 
-    <div id="div1">
+    <div id="div1" style=" margin: 0px; padding: 0px; box-sizing: border-box;">
         <ul id="ul1" class="one-sdv">
-            <li><a href="#">BRANDS</a></li>
-            <li><a href="#">CURRENCY SELECTOR</a></li>
-            <li><a href="#">GOLD RATE</a></li>
+            <li><a class="ancr" href="#">BRANDS</a></li>
+            <li><a class="ancr" href="#">CURRENCY SELECTOR</a></li>
+            <li><a class="ancr" href="#">GOLD RATE</a></li>
         </ul>
         <ul id="ul2" class="one-sdv">
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">ENCIRCLE</a></li>
-            <li><a href="#">GOLDEN HARVEST</a></li>
-            <li><a href="#">BOOK AN APPOINTMENT</a></li>
-            <li><i class="far fa-heart"></i><a href="#">WISHLIST</a></li>
-            <li><i class="fas fa-shopping-cart"></i><a href="#">CART</a></li>
+            <li><a class="ancr" href="#">LOGIN</a></li>
+            <li><a class="ancr" href="#">ENCIRCLE</a></li>
+            <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
+            <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
+            <li><i class="ancr" class="far fa-heart"></i><a href="#" style="text-decoration: none;">WISHLIST</a></li>
+            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="#" style="text-decoration: none;">CART(0)</a></li>
         </ul>
     </div>
     <hr class="hr">
+    <div id="div2" style="color: rgb(24, 24, 24); ">
+
+        <img id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt="">
+
+        <ul id="topnav2" class="top"
+            style="font-size: 13px;font-weight: bold;margin: 0px; padding: 0px;box-sizing: border-box;">
 
 
-    <div id="div2" style="color: rgb(24, 24, 24);">
+            <div class="navbar">
+
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">JEWELLERY</button>
+                    <div class="dropdown-content">
+                        <div class="header"></div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>CATEGORY </h3>
+                                <a href="#">ALL JEWELLERY</a>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">PENDANTS</a>
+                                <a href="#">FINGER RINGS</a>
+                                <a href="#">MANGALSUTRA</a>
+                                <a href="#">CHAIN</a>
+                                <a href="#">NECKLACE</a>
+                                <a href="#">NOSE PIN</a>
+                            </div>
+
+                            <div class="column">
+                                <h3>GENDER</h3>
+                                <a href="#">MEN</a>
+                                <a href="#">WOMEN</a>
+                                <a href="#">KIDS</a>
+                                <a href="#">UNISEX</a>
+                            </div>
+                            <div class="column">
+                                <h3>PRICE BRAND</h3>
+                                <a href="#">5000</a>
+                                <a href="#">5K - 10K</a>
+                                <a href="#">10K - 20K</a>
+                                <a href="#">20K - 30K</a>
+                                <a href="#">30K - 40K</a>
+                                <a href="#">40K - 50K</a>
+                                <a href="#">50K</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
-        <img id="logo"
-            src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT"
-            alt="">
+            <div class="navbar">
 
-        <ul id="topnav2" class="top">
-            <li><a href="">JEWELLERY</a>
-            <li><a href="">GOLD</a></li>
-            <li><a href="">DIAMOND</a></li>
-            <li><a href="">ENGAGEMENT RINGS</a></li>
-            <li><a href="">DIGITAL GOLD</a></li>
-            <li><a href="">COLLECTIONS</a></li>
-            <li><a href="">RIVAAH</a></li>
-            <li><a href="">MIA</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">GOLD</button>
+                    <div class="dropdown-content">
+                        <div class="header"></div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>OTHER CATEGORIES</h3>
+                                <a href="#">CHAIN</a>
+                                <a href="#">MANGALSUTRA</a>
+                                <a href="#">NECKWEAR</a>
+                                <a href="#">NOSE PIN</a>
+                                <a href="#">NECKWEAR SET</a>
+                                <a href="#">BANGLE</a>
+                                <a href="#">BRACELET</a>
+                                <a href="#">PARTY</a>
+                            </div>
+                            <div class="column">
+                                <h3>GOLD COIN</h3>
+                                <a href="#">1 GRAMS</a>
+                                <a href="#">2 GRAMS</a>
+                                <a href="#">4 GRAMS</a>
+                                <a href="#">5 GRAMS</a>
+                                <a href="#">8 GRAMS</a>
+                                <a href="#">10 GRAMS</a>
+                                <a href="#">25 GRAMS</a>
+                                <a href="#">50 GRAMS</a>
+                                <a href="#">100 GRAMS</a>
+                                <a href="#">500 GRAMS</a>
+                                <a href="#">1000 GRAMS</a>
+                            </div>
+                            <div class="column">
+                                <h3>METAL COLOUR</h3>
+                                <a href="#">YELLOW</a>
+                                <a href="#">ROSE</a>
+                                <a href="#">WHITE</a>
+                            </div>
+                        </div>
 
-            <li class="icn-1"><i  class="fas fa-map-marker-alt"></i></li>
-            <li class="icn-2"><i  class="fas fa-search"></i></li>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="navbar">
+
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">DIAMOND
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="header">
+
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>EARINGS</h3>
+                                <a href="#">STUD</a>
+                                <a href="#">HOOP</a>
+                                <a href="#">DROP</a>
+                                <a href="#">DROP</a>
+                                <a href="#">JHUMKA</a>
+                            </div>
+                            <div class="column">
+                                <h3>PENDANTS</h3>
+                                <a href="#">DAILY</a>
+                                <a href="#">PARTY</a>
+                                <a href="#">WORKWEAR</a>
+                                <a href="#">TRADITIONAL</a>
+                            </div>
+                            <div class="column">
+                                <h3>FINGER RING</h3>
+                                <a href="#">ENGAEMENT RINGS</a>
+                                <a href="#">SOLITARIES</a>
+                                <a href="#">CASUAL</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="navbar">
+
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">ENGAEMENT RINGS</button>
+                    <div class="dropdown-content">
+                        <div class="header">
+
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>GOLD</h3>
+                                <a href="#">CHAIN</a>
+                                <a href="#">MANGALSUTRA</a>
+                                <a href="#">NECKWEAR</a>
+                                <a href="#">NOSE PIN</a>
+                                <a href="#">NECKWEAR SET</a>
+                                <a href="#">BANGLE</a>
+                                <a href="#">BRACELET</a>
+                                <a href="#">PARTY</a>
+                            </div>
+                            <div class="column">
+                                <h3>DIAMOND</h3>
+                                <a href="#">ALL JEWELLERY</a>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">PENDANTS</a>
+                                <a href="#">FINGER RINGS</a>
+                                <a href="#">MANGALSUTRA</a>
+                                <a href="#">CHAIN</a>
+                                <a href="#">NECKLACE</a>
+                                <a href="#">NOSE PIN</a>
+                            </div>
+                            <div class="column">
+                                <h3>PLATINUM</h3>
+                                <a href="#">NECKLACE</a>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">CHAINS</a>
+                                <a href="#">EARINGS</a>
+                                <a href="#">CHAINS</a>
+                                <a href="#">EARINGS</a>
+                                <a href="#">CHAINS</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navbar">
+
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">DIGITAL GOLD</button>
+                    <div class="dropdown-content">
+                        <div class="header">
+
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>22K GOLD</h3>
+                                <a href="#">DIAMOND CHAINS</a>
+                                <a href="#">GOLD CHAINS</a>
+                                <a href="#">GOLD SMALL CHAINS</a>
+                                <a href="#">GOLD ROUND STYLISH CHAINS</a>
+                                <a href="#">GOLD CATEGORIES CHAINS</a>
+                                <a href="#">SMALL SIZES GOLD RINGS</a>
+                                <a href="#">MEDIUM SIZES GOLD RINGS</a>
+                                <a href="#">LARGE SIZES GOLD RINGS</a>
+                                <a href="#"> EXTRA LARGE SIZES GOLD RINGS</a>
+
+                            </div>
+                            <div class="column">
+                                <h3>24K GOLD</h3>
+                                <a href="#">CROWNS</a>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">HAIRPINS</a>
+                                <a href="#">NECKLACE</a>
+                                <a href="#">TORC</a>
+                                <a href="#">BRACELET</a>
+                                <a href="#">ARMLET</a>
+                                <a href="#">CUFFS LINKS</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navbar">
+
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">COLLECTIONS
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="header">
+
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>MEN</h3>
+                                <a href="#">DIAMOND CHAINS</a>
+                                <a href="#">GOLD CHAINS</a>
+                                <a href="#">PLATINUM CHAINS</a>
+                                <a href="#">GOLD ROUND STYLISH CHAINS</a>
+                                <a href="#">SILVER CATEGORIES CHAINS</a>
+                                <a href="#">SMALL SIZES RINGS</a>
+                                <a href="#">MEDIUM SIZES RINGS</a>
+                                <a href="#">LARGE SIZES RINGS</a>
+                                <a href="#"> EXTRA LARGE SIZES RINGS</a>
+                            </div>
+                            <div class="column">
+                                <h3>WOMEN HEAD & NECK JEWELLERY</h3>
+                                <a href="#">CROWNS</a>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">HAIRPINS</a>
+                                <a href="#">NECKLACE</a>
+                                <a href="#">TORC</a>
+                                <a href="#">BRACELET</a>
+                                <a href="#">ARMLET</a>
+                                <a href="#">CUFFS LINKS</a>
+                            </div>
+                            <div class="column">
+                                <h3>WOMEN OTHER JEWELLERY</h3>
+                                <a href="#">RINGS</a>
+                                <a href="#">BELLY CHAIN</a>
+                                <a href="#">CHATELAINE</a>
+                                <a href="#">BROOCH</a>
+                                <a href="#">ANKLETS</a>
+                                <a href="#">TOE RINGS</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="navbar">
+
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">RIVAAH
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="header">
+
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <a href="#">DIAMOND CHAINS</a>
+                                <a href="#">GOLD CHAINS</a>
+                                <a href="#">PLATINUM CHAINS</a>
+                                <a href="#">GOLD ROUND STYLISH CHAINS</a>
+                                <a href="#">SILVER CATEGORIES CHAINS</a>
+                                <a href="#">SMALL SIZES RINGS</a>
+                                <a href="#">MEDIUM SIZES RINGS</a>
+                                <a href="#">LARGE SIZES RINGS</a>
+                                <a href="#"> EXTRA LARGE SIZES RINGS</a>
+                            </div>
+                            <div class="column">
+                                <a href="#">NECKLACE</a>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">CHAINS</a>
+                                <a href="#">EARRINGS</a>
+                                <a href="#">CHAINS</a>
+                                <a href="#">EARINGS</a>
+                                <a href="#">CHAINS</a>
+
+                            </div>
+                            <div class="column">
+                                <a href="#">ALL JEWELLERY</a>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">PENDANTS</a>
+                                <a href="#">FINGER RINGS</a>
+                                <a href="#">MANGALSUTRA</a>
+                                <a href="#">CHAIN</a>
+                                <a href="#">NECKLACE</a>
+                                <a href="#">NOSE PIN</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navbar">
+
+                <div class="dropdown">
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">MIA
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="header">
+
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>CATEGORY</h3>
+                                <a href="earrings.html">EARRINGS</a>
+                                <a href="#">PENDANTS</a>
+                                <a href="#">BRACELET</a>
+                                <a href="#">RINGS</a>
+                                <a href="#">NECKWEAR</a>
+                            </div>
+                            <div class="column">
+                                <h3>COLLECTIONS</h3>
+                                <h3>MIA X DISNEY - THE PRINCESS</h3>
+                                <a href="#">BIRTHSTONE</a>
+                                <a href="#">MIA FESTIVE</a>
+                                <a href="#">MIA GLAM</a>
+                                <a href="#">MIA WINGS</a>
+                                <a href="#">MIA ALLROUNDERS</a>
+                                <a href="#">FRIENDS OF BRIDE</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <li class="icn-1"><i class="fas fa-map-marker-alt"></i></li>
+            <li class="icn-2"><i class="fas fa-search"></i></li>
         </ul>
 
     </div>
+    <!-- ending for top two nav-bars -->
 
-    <hr class="hr">
+    <!-- image sliding section -->
+
+    <img name="slide" width="100%" height="auto">
+
+   <!--  shop by Categories section -->
+
+    <h2 id="h2vikas" >Shop By Categories</h2>
+        <div class="container" >
+             <section class="customer-logos slider">
+                <div class="slide"><img  class="imgchange"  src=" https://www.tanishq.co.in/wps/wcm/connect/tanishq/d9dfbaf4-cb96-4aef-9ce2-5320fe02bb03/Earring-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-d9dfbaf4-cb96-4aef-9ce2-5320fe02bb03-niwxlC3"><a href="earrings.html"><p>EARRINGS</p></a> </div>
+                <div class="slide"><img class="imgchange" src=" https://www.tanishq.co.in/wps/wcm/connect/tanishq/87bc5b27-9131-4a12-a4a7-9eeda942e7b5/Pendant-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-87bc5b27-9131-4a12-a4a7-9eeda942e7b5-niwxmC."> <p>GOLD COINS</p></div>
+                <div class="slide"><img class="imgchange" src=" https://www.tanishq.co.in/wps/wcm/connect/tanishq/6726ce10-0d7c-4f5f-8078-64ce0282e677/goldcoin-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-6726ce10-0d7c-4f5f-8078-64ce0282e677-niwxqpM"><p>PENDANTS</p></div>
+                <div class="slide"><img class="imgchange" src=" https://www.tanishq.co.in/wps/wcm/connect/tanishq/8dba9266-cb38-462c-a58d-b04e1abaacc1/bangle2.-bgpng.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-8dba9266-cb38-462c-a58d-b04e1abaacc1-niwxlH4"> <p>BANGLES</p></div>
+                <div class="slide"><img class="imgchange" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/52d947e5-5c09-45e8-b563-82fad0227610/category-giftCard-web-3.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-52d947e5-5c09-45e8-b563-82fad0227610-nmS4LCg "><p>GIFT CARDS</p></div>
+                <div class="slide"><img class="imgchange" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/3df1c588-465f-4388-b895-a88ca270527b/fingerring-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-3df1c588-465f-4388-b895-a88ca270527b-niwxw5l "><p>FINGER RINGS</p></div>
+                <div class="slide"><img class="imgchange" src=" https://www.tanishq.co.in/wps/wcm/connect/tanishq/8c58b09b-a8e5-4909-ab3c-001188b164ca/chain-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-8c58b09b-a8e5-4909-ab3c-001188b164ca-niwxmpW"><p>NOSE PINS</p></div>
+                <div class="slide"><img class="imgchange" src=" https://www.tanishq.co.in/wps/wcm/connect/tanishq/6bc3d11c-f6be-47cd-a0c6-dd257856ae01/nosepin-bg.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-6bc3d11c-f6be-47cd-a0c6-dd257856ae01-niwxq4P"> <p>CHAINS</p></div>
+             </section>
+          </div>
+
+         <!--  Exclusively for you section -->
+    
+          <h1 id="exclusive">Exclusively for You!</h1>
+          <div class="exlus">
 
 
+        <div class="fimg">
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/910f83b0-581b-464f-85ed-69ac2866ba9b/Earring--420x528Px.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-910f83b0-581b-464f-85ed-69ac2866ba9b-nwXd0PG" alt="" width=" 350px" height="auto">
+        </div>
 
-    <div>
-        <img id="auto-chnage auto1" src="https://source.unsplash.com/1600x500/?jewellery,Rings" alt="">
+        <div class="simg">
+
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/961d58f0-ec12-4e1c-8573-4deb5d93517f/Pendant-01-420x528Px.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-961d58f0-ec12-4e1c-8573-4deb5d93517f-nwXd0PG" alt="" width=" 350px" height="auto">
+        </div>
+
+        <div class="timg">
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/3ab40bbc-4d1b-43ff-9a76-94144a7a4a68/Pendant-420x528Px.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-3ab40bbc-4d1b-43ff-9a76-94144a7a4a68-nwXd0PG" alt="" width=" 350px" height="auto">
+        </div>
+
     </div>
 
-    <div>
-        <img id="auto-chnage auto2" src="https://source.unsplash.com/1600x500/?jewellery,Diamond" alt="">
+
+
+    <div class="rivaah"
+         style="background-image: url(https://staticimg.titan.co.in/Tanishq/Banners/rivaah/images/banner/Tamil/Nayanatara_tamil.jpg)">
+         <div class="mid">
+            <img src="https://staticimg.titan.co.in/Tanishq/rivaahLogo-1.png" alt="" id="riva">
+        </div>
+
+        <div id="mid-para">
+        <p>A jewel for every tradition</p>
+        <p>Stunning Wedding Jewellery crafted to celebrate the glory of every Indian bride. Please share your details with us and our jewellery expert will be in touch soon </p>
+        </div>
+
+          <div class="arrange-btn">
+            <button class="btn-bg">ARRANGE A CALLBACK</button>
+            <button class="btn-bg bg1" style="background-color: #efc3cb;">EXPLORE MORE</button>
+        </div>
     </div>
 
+    <img src="tanis.webp" style="max-width: 100%;height: auto;margin-top: 40px;" alt="">
+
+   <!--  <h1 style="text-align: center; font-size: 25px; font-family: sans-serif;">Little Big Moments by Tanishq</h1> -->
+
+    <!-- <div class="ytp-cued-thumbnail-overlay-image" style="background-image: url("https://i.ytimg.com/vi/VCZ5f_PIxV8/sddefault.jpg");"></div>
+    <video>
+    <iframe width="720" height="500" src="https://www.youtube.com/embed/VCZ5f_PIxV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </video> -->
+
+    <img style="width: 100%; margin-top: 30px; cursor: pointer;" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/31ce4125-c71b-4855-b3f5-c94c1ca13abf/desktop/1920x600Px.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-31ce4125-c71b-4855-b3f5-c94c1ca13abf-desktop-nwQDyzx">
+    <h1 style="text-align: center; font-size: 30px; font-family: sans-serif;">New for you !</h1>
+    <div style="justify-content: center; margin-left: 80px;">
+        <img style="width:30%;" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/bd77144e-1ec1-4ac8-9df8-5297f0a77231/RIng+Size+Calculator+V1.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-bd77144e-1ec1-4ac8-9df8-5297f0a77231-nj3mC0L">
+        <img style="width:30%;" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/879bae70-bd0b-4d61-9eb6-382b58e6c2c1/MicrosoftTeams-image+%28116%29.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-879bae70-bd0b-4d61-9eb6-382b58e6c2c1-nx9lJht">
+        <img style="width:30%;" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/02c4b519-260c-4341-9a08-9ac079915471/At+Home+Jewellery+Care_+420x528+%281%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-02c4b519-260c-4341-9a08-9ac079915471-njiWf6x">
+
+    </div>
+    <img style="width: 100%; margin-top: 30px; cursor: pointer;" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/ef3bc874-fd1b-40b3-91e2-b5155b82a7ee/desktop/1920X712.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-ef3bc874-fd1b-40b3-91e2-b5155b82a7ee-desktop-nHflsvo">
+    <!-- footer -->
+    <div class="three-el">
+
+
+
+        <div class="one-el">
+            <h3>100% ORIGINAL</h3>
+            <p>All products are original and go through strict quality check</p>
+        </div>
+
+        <div class="one-el">
+            <h3>A TATA PRODUCT</h3>
+            <p>The TATA Seals of Trust comes with all our products</p>
+        </div>
+
+        <div class="one-el">
+            <h3>SHIPPING</h3>
+            <p>Shipping in India is Free. Shipping charges applicable for international locations</p>
+        </div>
+    </div>
+
+    <img src="sale.webp" style="max-width: 100%;height: auto;" alt="">
+
+    <div class="top-footer">
+
+        <div class="in-foot">
+            <h1 class="ft-tg">Find a Store Near You</h1>
+            <p class="pt-tg">We are currently open 320+ stores in India and we plan to open more number of stores for
+                you Find your nearest store for a great shopping experience</p>
+            <button class="class-btn1">USE MY CURRENT LOCATION</button>
+            <input type="text" id="ft-city1" name="city" placeholder="ENTER YOUR CITY/PIN" width="10px">
+            <button class="class-btn1" id="t-btn1">SEARCH</button>
+        </div>
+
+        <div class="mid-btn">
+
+        </div>
+
+        <p
+            style="color: white;text-align: center;padding-top: 20px;font-family: playfair display ;line-height: 30px;font-weight: 400;">
+            KNOW MORE</p>
+
+
+        <div class="foot-cont">
+
+            <div class="first-items">
+                <ul id="ft-itms">
+                    <p id="ft-head">Customer Service</p>
+                </ul>
+                <ul>
+                    <li>HELP & CONTACT</li>
+                    <li>DELIVERY INFORMATION</li>
+                    <li>INTERNATIONAL SHIPPING</li>
+                    <li>RETURNS</li>
+                    <li>PAYMENT OPTIONS</li>
+                    <li>TRACK ORDER</li>
+                    <li>ENCIRCLE PROGRAM</li>
+                    <li>OFFER & CONTEST DETAILS</li>
+                </ul>
+            </div>
+
+
+            <div class="second-items">
+                <ul id="ft-itms">
+                    <p id="ft-head">About Tanishq</p>
+                </ul>
+                <ul>
+                    <li>CAREERS</li>
+                    <li>FIND A STORE</li>
+                    <li>BLOG</li>
+                </ul>
+            </div>
+
+            <div class="third-items">
+
+                <p  id="ft-head">Sign up to receive exclusive offers and news</p>
+
+                <div class="btn-cls">
+                    <input type="email" id="ft-mail" name="email" placeholder="ENTER YOUR EMAIL">
+                    <Button id="t-btn">SUBSCRIBE</Button>
+
+
+
+
+
+                </div>
+                <div class="socialmedia">
+                    <p id="follo">Follow Us On</p>
+                    <p id="faicon">
+                        <a href="https://www.facebook.com/Tanishq/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/TanishqJewelry"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tanishqjewellery/"> <i class="fab fa-instagram"></i></a>
+
+                    </p>
+                </div>
+
+
+                <div class="sticker">
+                    <p id="app">DOWNLOAD OUR TANISHQ APP</p>
+                    <a
+                        href="https://apps.apple.com/in/app/tanishq-a-tata-product/id1494086207#cm_sp=Homepage-_-footer-_-IOSApp">
+                        <img id="im-app" src="iOs.png" src="" alt="">
+                    </a>
+
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.titancompany.tanishqapp#cm_sp=Homepage-_-footer-_-AndroidAppLogo">
+                        <img id="im-app" src="google-play-store.webp" width="130px" alt=""></a>
+
+                    <hr>
+                </div>
+
+
+                <div id="termscon">
+
+                    <p><a href="https://www.tanishq.co.in/content/terms-and-conditions" class="tandc">TERMS AND
+                            CONDITIONS</a></p>
+                    <P><a href="https://www.tanishq.co.in/content/privacy-policy" class="tandc">PRIVACY POLICY</a></P>
+
+                </div>
+
+                <div id="copyright">
+                    <p id="copy">&#169</p>
+                    <p> 2021 Titan Company Limited All Rights Reserved</p>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <div class="last" id="wid">
+
+            <img id="width" class="same" src="paypal.png" alt="">
+
+            <img id="width" class="same" src="mastercard.png" alt="">
+
+            <img id="width" class="same" src="rupay-logo.png" alt="">
+
+            <img id="width" class="same" src="visa.png" alt="">
+
+
+
+        </div>
+
+
+
+    </div>
 
 </body>
 
 </html>
+
+
+<script>
+
+
+    var i = 0;
+    var images = [];
+    var time = 4000;
+
+
+    images[0] = 'https://www.tanishq.co.in/wps/wcm/connect/tanishq/e66759c1-82f0-4707-bf00-dbe26322bbc3/desktop/2500x950.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-e66759c1-82f0-4707-bf00-dbe26322bbc3-desktop-nGa5Jt1&impolicy=pqlow';
+    images[1] = 'https://staticimg.titan.co.in/MobileApp/Jewellery/Banners/2500x950_Nayantara.jpg';
+    images[2] = 'https://www.tanishq.co.in/wps/wcm/connect/tanishq/03878f03-7ead-4b71-9a9a-2a429a34ef52/desktop/2500x950.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-03878f03-7ead-4b71-9a9a-2a429a34ef52-desktop-mXBpnuL&impolicy=pqlow';
+    images[3] = 'https://www.tanishq.co.in/wps/wcm/connect/tanishq/acb0fe1f-1574-4283-b9a6-9d65650dd08c/desktop/2500x950.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-acb0fe1f-1574-4283-b9a6-9d65650dd08c-desktop-nEjA2ad&impolicy=pqlow';
+    images[4] = 'https://www.tanishq.co.in/wps/wcm/connect/tanishq/824e4c2a-bbaa-4dbf-875a-af337a864b54/desktop/2500x950+%281%29.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-824e4c2a-bbaa-4dbf-875a-af337a864b54-desktop-nHRpKQ9&impolicy=pqlow';
+
+    function changeImg() {
+        document.slide.src = images[i];
+
+
+        if (i < images.length - 1) {
+            i++;
+        } else {
+            i = 0;
+        }
+
+        setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+
+
+
+
+
+
+    // Validating Empty Field
+    function check_empty() {
+        if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('number').value == "") {
+            alert("Please Fill All Details its Mandatory !");
+        } else {
+            document.getElementById('form').submit();
+            alert("Form Submitted Successfully...");
+        }
+    }
+    //Function To Display Popup
+    function div_show() {
+        document.getElementById('abc').style.display = "block";
+    }
+    //Function to Hide Popup
+    function div_hide() {
+        document.getElementById('popupContact').style.display = "none";
+    }
+
+
+
+
+
+
+// shop cate
+
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
