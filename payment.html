@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>ADDRESS & PAYMENT</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+<style>
+*{
+        font-family: 'Roboto Slab', serif !important;
+    }
+
+#ctypin{
+  display: flex;
+  gap: 3%;
+  font-family: 'Roboto Slab', serif;
+}
+
+#ctypin >input{
+width: 49%;
+height: 45px;
+background-color: rgb(245, 245, 245);
+border: 1px solid rgb(240, 240, 240);
+text-align: left;
+padding-left: 3%;
+font-family: 'Roboto Slab', serif;
+font-size: 15px;
+ font-weight: 200;
+}
+
+#paymntsdiv{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  font-family: 'Roboto Slab', serif;
+  gap: 10%;
+ 
+}
+
+#fieldste4{
+  width: 40%;
+  display: grid;
+  gap: 3%;
+height: 500px;
+font-family: 'Roboto Slab', serif;
+  
+}
+#fieldste4 >input{
+  height: 45px;
+  background-color: rgb(245, 245, 245);
+ border: 1px solid rgb(240, 240, 240);
+ text-align: left;
+ font-size: 16px;
+ font-weight: 200;
+ padding-left: 3%;
+ font-family: 'Roboto Slab', serif;
+}
+
+#legend4{
+  display: flex;
+  gap: 1%;
+  font-size: 20px;
+  text-align: center;
+  padding: 0% 3%;
+  font-family: 'Roboto Slab', serif;
+  
+}
+#fieldste5{
+  width: 40%;
+  display: grid;
+  gap: 3%;
+height: 310px;
+font-family: 'Roboto Slab', serif;
+}
+
+#fieldste5 >input{
+  height: 45px;
+  background-color: rgb(245, 245, 245);
+ border: 1px solid rgb(240, 240, 240);
+ text-align: left;
+ font-size: 16px;
+ font-weight: 200;
+ padding-left: 3%;
+ font-family: 'Roboto Slab', serif;
+}
+
+#legend5{
+  display: flex;
+  gap: 1%;
+  font-size: 20px;
+  text-align: center;
+  padding: 0% 3%;
+  font-family: 'Roboto Slab', serif;
+  
+}
+#acceptedimage{
+  display: flex;
+  gap: 9%;
+  justify-content: center;
+  font-family: 'Roboto Slab', serif;
+}
+#acceptedimage >img{
+  width:10%;
+  object-fit: contain;
+}
+#expiryyear{
+  display: flex;
+  gap: 5%;
+  font-family: 'Roboto Slab', serif;
+  
+}
+#expiryyear>input{
+height: 45px;
+background-color: rgb(245, 245, 245);
+border: 1px solid rgb(240, 240, 240);
+font-family: 'Roboto Slab', serif;
+font-size: 16px;
+ font-weight: 200;
+ padding-left: 3%;
+}
+#cvv{
+  width: 20%;
+  font-family: 'Roboto Slab', serif;
+}
+#expirymonth{
+  width: 50%;
+}
+#expiryyear1{
+  width: 50%;
+}
+#paymnetdon{
+  height: 45px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+ border: 1px solid black;
+}
+
+#address{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 4%;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ------------------------------------------- */
+  
+
+/* mehboob */
+/* this is TOPNavBar1 work by Asraf */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 43px;
+
+}
+.one-sdv{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    
+}
+
+
+#ul1{
+    margin-left: 80px;
+}
+
+#ul2{
+    margin-right: 120px;
+}
+
+#div1 > ul > li{
+    padding: 16px 20px;
+    color: #000000;
+    
+    font-size: 12px ;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-shadow: 2px 2px 5px rgb(224, 195, 195);
+}
+
+i{
+padding: 0px 5px;
+font-size: 15px;
+cursor: pointer;
+}
+
+/* TopNavBar 2 */
+
+#logo{
+    margin-left: 120px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    width: 121px;
+    height: 58px;
+}
+
+#div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 43px;
+    margin: 30px;
+    
+}
+
+#topnav2{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.top > li {
+    padding: 16px 20px;
+    color: #181818;
+    font-size: 13px ;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+#div2 > ul > li :hover{
+    color: #000000;
+}
+
+#topnav2{
+    margin-right: 280px;
+}
+.icn-1{
+    margin-left: 80px;
+    
+}
+
+/* .icn-2{
+    margin-left: 0px 0px 50px 0px;
+} */
+
+div > img > #auto-change {
+    max-width: 100%;
+    height: auto;
+   
+}
+#auto1{
+    margin-bottom: 100px;
+}
+
+a {
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    opacity: 0.7;
+    color: #181818;
+}
+h1{
+    font-family:  'Playfair Display', serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+ .exlus{
+    display: flex;
+    /* justify-content: space-evenly; */
+   margin-left: 240px;
+  margin-right: 240px;
+   
+}
+
+#heading1{
+    text-align: center;
+    height: 30px;
+}
+
+.fimg{
+    padding: 10px;
+}
+.simg{
+    padding: 10px;
+    
+}
+.timg{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.banner{
+    display: flex;
+    float: right;
+}
+
+/* .cont1{
+    background-image: url("https://staticimg.titan.co.in/Tanishq/Banners/rivaah/images/banner/Tamil/Nayanatara_tamil.jpg");
+    height: 63vh;
+    background-position: top-left 14%;
+    background-position-x: left 14% ;
+    background-position-y:top ;
+    /* margin: 30px 0px; 
+    
+}  
+/* Dropdown */
+.navbar{
+    overflow: hidden;
+    
+}
+
+.dropdown{
+    display: right;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    border: none;
+  outline: none;
+  color: white;
+  font-size: 12px;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.dropbtn{
+    font-size: 10px;
+}
+
+.navbar a:hover,dropdown:hover .dropbtn{
+    color: rgb(197, 14, 45);
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    left: 0;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content .header {
+    /* background: #f9f9f9; */
+    padding-bottom: 20px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #fafafa;
+    height: 450px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 12px;
+    padding-bottom: 10PX;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .column a:hover {
+    color: #181818;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+
+
+
+
+</style>
+
+<body>
+
+  <div id="div1" style=" margin: 0px; padding: 0px; box-sizing: border-box;">
+    <ul id="ul1" class="one-sdv">
+        <li><a class="ancr" href="#">BRANDS</a></li>
+        <li><a class="ancr" href="#">CURRENCY SELECTOR</a></li>
+        <li><a class="ancr" href="#">GOLD RATE</a></li>
+    </ul>
+    <ul id="ul2" class="one-sdv">
+        
+        <li><a class="ancr" href="#">ENCIRCLE</a></li>
+        <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
+        <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
+        <li><i class="ancr" class="far fa-heart"></i><a href="#" style="text-decoration: none;">WISHLIST</a></li>
+       
+    </ul>
+</div>
+<hr class="hr">
+<div id="div2" style="color: rgb(24, 24, 24); ">
+
+    <img id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt="">
+
+    <ul id="topnav2" class="top"
+        style="font-size: 13px;font-weight: bold;margin: 0px; padding: 0px;box-sizing: border-box;">
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">JEWELLERY</button>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>CATEGORY </h3>
+                            <a href="#">ALL JEWELLERY</a>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">PENDANTS</a>
+                            <a href="#">FINGER RINGS</a>
+                            <a href="#">MANGALSUTRA</a>
+                            <a href="#">CHAIN</a>
+                            <a href="#">NECKLACE</a>
+                            <a href="#">NOSE PIN</a>
+                        </div>
+
+                        <div class="column">
+                            <h3>GENDER</h3>
+                            <a href="#">MEN</a>
+                            <a href="#">WOMEN</a>
+                            <a href="#">KIDS</a>
+                            <a href="#">UNISEX</a>
+                        </div>
+                        <div class="column">
+                            <h3>PRICE BRAND</h3>
+                            <a href="#">5000</a>
+                            <a href="#">5K - 10K</a>
+                            <a href="#">10K - 20K</a>
+                            <a href="#">20K - 30K</a>
+                            <a href="#">30K - 40K</a>
+                            <a href="#">40K - 50K</a>
+                            <a href="#">50K</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">GOLD</button>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>OTHER CATEGORIES</h3>
+                            <a href="#">CHAIN</a>
+                            <a href="#">MANGALSUTRA</a>
+                            <a href="#">NECKWEAR</a>
+                            <a href="#">NOSE PIN</a>
+                            <a href="#">NECKWEAR SET</a>
+                            <a href="#">BANGLE</a>
+                            <a href="#">BRACELET</a>
+                            <a href="#">PARTY</a>
+                        </div>
+                        <div class="column">
+                            <h3>GOLD COIN</h3>
+                            <a href="#">1 GRAMS</a>
+                            <a href="#">2 GRAMS</a>
+                            <a href="#">4 GRAMS</a>
+                            <a href="#">5 GRAMS</a>
+                            <a href="#">8 GRAMS</a>
+                            <a href="#">10 GRAMS</a>
+                            <a href="#">25 GRAMS</a>
+                            <a href="#">50 GRAMS</a>
+                            <a href="#">100 GRAMS</a>
+                            <a href="#">500 GRAMS</a>
+                            <a href="#">1000 GRAMS</a>
+                        </div>
+                        <div class="column">
+                            <h3>METAL COLOUR</h3>
+                            <a href="#">YELLOW</a>
+                            <a href="#">ROSE</a>
+                            <a href="#">WHITE</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">DIAMOND
+                </button>
+                <div class="dropdown-content">
+                    <div class="header">
+
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>EARINGS</h3>
+                            <a href="#">STUD</a>
+                            <a href="#">HOOP</a>
+                            <a href="#">DROP</a>
+                            <a href="#">DROP</a>
+                            <a href="#">JHUMKA</a>
+                        </div>
+                        <div class="column">
+                            <h3>PENDANTS</h3>
+                            <a href="#">DAILY</a>
+                            <a href="#">PARTY</a>
+                            <a href="#">WORKWEAR</a>
+                            <a href="#">TRADITIONAL</a>
+                        </div>
+                        <div class="column">
+                            <h3>FINGER RING</h3>
+                            <a href="#">ENGAEMENT RINGS</a>
+                            <a href="#">SOLITARIES</a>
+                            <a href="#">CASUAL</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">ENGAEMENT RINGS</button>
+                <div class="dropdown-content">
+                    <div class="header">
+
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>GOLD</h3>
+                            <a href="#">CHAIN</a>
+                            <a href="#">MANGALSUTRA</a>
+                            <a href="#">NECKWEAR</a>
+                            <a href="#">NOSE PIN</a>
+                            <a href="#">NECKWEAR SET</a>
+                            <a href="#">BANGLE</a>
+                            <a href="#">BRACELET</a>
+                            <a href="#">PARTY</a>
+                        </div>
+                        <div class="column">
+                            <h3>DIAMOND</h3>
+                            <a href="#">ALL JEWELLERY</a>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">PENDANTS</a>
+                            <a href="#">FINGER RINGS</a>
+                            <a href="#">MANGALSUTRA</a>
+                            <a href="#">CHAIN</a>
+                            <a href="#">NECKLACE</a>
+                            <a href="#">NOSE PIN</a>
+                        </div>
+                        <div class="column">
+                            <h3>PLATINUM</h3>
+                            <a href="#">NECKLACE</a>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">CHAINS</a>
+                            <a href="#">EARINGS</a>
+                            <a href="#">CHAINS</a>
+                            <a href="#">EARINGS</a>
+                            <a href="#">CHAINS</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">DIGITAL GOLD
+                </button>
+                <div class="dropdown-content">
+                    <div class="header">
+
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>22K GOLD</h3>
+                            <a href="#">DIAMOND CHAINS</a>
+                            <a href="#">GOLD CHAINS</a>
+                            <a href="#">GOLD SMALL CHAINS</a>
+                            <a href="#">GOLD ROUND STYLISH CHAINS</a>
+                            <a href="#">GOLD CATEGORIES CHAINS</a>
+                            <a href="#">SMALL SIZES GOLD RINGS</a>
+                            <a href="#">MEDIUM SIZES GOLD RINGS</a>
+                            <a href="#">LARGE SIZES GOLD RINGS</a>
+                            <a href="#"> EXTRA LARGE SIZES GOLD RINGS</a>
+
+                        </div>
+                        <div class="column">
+                            <h3>24K GOLD</h3>
+                            <a href="#">CROWNS</a>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">HAIRPINS</a>
+                            <a href="#">NECKLACE</a>
+                            <a href="#">TORC</a>
+                            <a href="#">BRACELET</a>
+                            <a href="#">ARMLET</a>
+                            <a href="#">CUFFS LINKS</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">COLLECTIONS
+                </button>
+                <div class="dropdown-content">
+                    <div class="header">
+
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>MEN</h3>
+                            <a href="#">DIAMOND CHAINS</a>
+                            <a href="#">GOLD CHAINS</a>
+                            <a href="#">PLATINUM CHAINS</a>
+                            <a href="#">GOLD ROUND STYLISH CHAINS</a>
+                            <a href="#">SILVER CATEGORIES CHAINS</a>
+                            <a href="#">SMALL SIZES RINGS</a>
+                            <a href="#">MEDIUM SIZES RINGS</a>
+                            <a href="#">LARGE SIZES RINGS</a>
+                            <a href="#"> EXTRA LARGE SIZES RINGS</a>
+                        </div>
+                        <div class="column">
+                            <h3>WOMEN HEAD & NECK JEWELLERY</h3>
+                            <a href="#">CROWNS</a>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">HAIRPINS</a>
+                            <a href="#">NECKLACE</a>
+                            <a href="#">TORC</a>
+                            <a href="#">BRACELET</a>
+                            <a href="#">ARMLET</a>
+                            <a href="#">CUFFS LINKS</a>
+                        </div>
+                        <div class="column">
+                            <h3>WOMEN OTHER JEWELLERY</h3>
+                            <a href="#">RINGS</a>
+                            <a href="#">BELLY CHAIN</a>
+                            <a href="#">CHATELAINE</a>
+                            <a href="#">BROOCH</a>
+                            <a href="#">ANKLETS</a>
+                            <a href="#">TOE RINGS</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">RIVAAH
+                </button>
+                <div class="dropdown-content">
+                    <div class="header">
+
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <a href="#">DIAMOND CHAINS</a>
+                            <a href="#">GOLD CHAINS</a>
+                            <a href="#">PLATINUM CHAINS</a>
+                            <a href="#">GOLD ROUND STYLISH CHAINS</a>
+                            <a href="#">SILVER CATEGORIES CHAINS</a>
+                            <a href="#">SMALL SIZES RINGS</a>
+                            <a href="#">MEDIUM SIZES RINGS</a>
+                            <a href="#">LARGE SIZES RINGS</a>
+                            <a href="#"> EXTRA LARGE SIZES RINGS</a>
+                        </div>
+                        <div class="column">
+                            <a href="#">NECKLACE</a>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">CHAINS</a>
+                            <a href="#">EARINGS</a>
+                            <a href="#">CHAINS</a>
+                            <a href="#">EARINGS</a>
+                            <a href="#">CHAINS</a>
+
+                        </div>
+                        <div class="column">
+                            <a href="#">ALL JEWELLERY</a>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">PENDANTS</a>
+                            <a href="#">FINGER RINGS</a>
+                            <a href="#">MANGALSUTRA</a>
+                            <a href="#">CHAIN</a>
+                            <a href="#">NECKLACE</a>
+                            <a href="#">NOSE PIN</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #181818;opacity: 0.8;">MIA
+                </button>
+                <div class="dropdown-content">
+                    <div class="header">
+
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>CATEGORY</h3>
+                            <a href="earrings.html">EARRINGS</a>
+                            <a href="#">PENDANTS</a>
+                            <a href="#">BRACELET</a>
+                            <a href="#">RINGS</a>
+                            <a href="#">NECKWEAR</a>
+                        </div>
+                        <div class="column">
+                            <h3>COLLECTIONS</h3>
+                            <h3>MIA X DISNEY - THE PRINCESS</h3>
+                            <a href="#">BIRTHSTONE</a>
+                            <a href="#">MIA FESTIVE</a>
+                            <a href="#">MIA GLAM</a>
+                            <a href="#">MIA WINGS</a>
+                            <a href="#">MIA ALLROUNDERS</a>
+                            <a href="#">FRIENDS OF BRIDE</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <li class="icn-1"><i class="fas fa-map-marker-alt"></i></li>
+        <li class="icn-2"><i class="fas fa-search"></i></li>
+    </ul>
+
+</div>
+<hr class="hr">
+
+
+    <h1 id="address">ADDRESS & PAYMENT</h1>
+   <div id="paymntsdiv">
+
+    <fieldset id="fieldste4">
+
+        <legend id="legend4"> BILLING ADDRESS</legend>
+             <input type="text" placeholder="NAME" id="fullname">
+
+            <input type="number" placeholder="MOBILE NUMBER" id="mobnumber">
+
+            <input type="email" placeholder="EMAIL ID" id="email">
+
+            <input id="addlin1" type="address" placeholder="ADDRESS LINE 1">
+
+            <input id="addlin2" type="address" placeholder="ADDRESS LINE 2">
+           
+            <div id="ctypin">
+                <input id="addlin3" type="address" placeholder="CITY">
+
+                <input id="addlin4" type="number" placeholder="PIN">
+            </div>
+           
+            <input id="addlin5" type="text" placeholder="STATE">
+
+     </fieldset>
+
+
+
+     <fieldset id="fieldste5">
+         
+        <legend id="legend5"> PAYMENT DETAILS</legend>
+          
+            <div id="acceptedimage">
+              <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo-2006-2014.png" alt="VISA LOGO">
+
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" alt="rupay logo">
+
+              <img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/news8331.jpeg" alt="paytm">
+
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png" alt="UPI">
+
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="mastercard">
+
+            </div>
+             <input type="text" placeholder="NAME ON CARD*" id="fullname">
+         
+            <input type="number" placeholder="CARD NUMBER*" id="mobnumber">
+            
+
+             <div id="expiryyear">
+                <input id="expirymonth" type="text" placeholder="EXPIRY MONTH ">
+
+                <input id="expiryyear1" type="number" placeholder="EXPIRY YEAR">
+               
+                <input type="number" id="cvv" placeholder="CVV">
+             </div>
+            <button id="paymnetdon" onclick="payclick()">PAY</button>
+
+     </fieldset>
+   </div>
+
+
+
+   <script>
+
+let btnforpay =document.getElementById("paymnetdon")
+
+ function payclick(){
+    alert("Payment successfull");
+ }
+
+   </script>
+
+</body>
+</html>
