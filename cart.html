@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+    <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,6 +116,7 @@
 #pricedetails{
   /* border: 1px solid black; */
   width: 30%;
+  margin: -40px;
   font-family: 'Roboto Slab', serif;
   max-height:500px ;
 }
@@ -130,13 +132,13 @@
   height: 45px;
   width: 60%;
   text-align: center;
-  margin-right: 0% !important;
+  margin-right: 5% !important;
   background-color: rgb(240, 240, 240);
   border: 1px solid grey;
   font-family: 'Roboto Slab', serif;
 }
 #applyvoucher{
-  height: 49px;
+  height: 46px;
   width: 25%;
   margin: 0% !important;
   color: white;
@@ -146,8 +148,11 @@
 }
 
 #showsuccessofvoucher{
-  text-align: center;
+    text-align: center;
+    line-height: 35px;
+    margin-left: -155px;
 }
+
 #for_total{
  margin-left: 40% ;
 }
@@ -327,7 +332,7 @@ a {
     list-style-type: none;
     list-style: none;
     text-decoration: none;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     color: #181818;
 }
 h1{
@@ -455,8 +460,10 @@ h1{
     clear: both;
   }  
 
-
-
+  #linkcheckout >button>a {
+            text-decoration: none !important;
+            color: white !important;
+        }
 
 
   
@@ -482,13 +489,13 @@ h1{
             <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
             <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
             <li><i class="ancr" class="far fa-heart"></i><a href="#" style="text-decoration: none;">WISHLIST</a></li>
-            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="#" style="text-decoration: none;">CART(2)</a></li>
+            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="#" style="text-decoration: none;">CART(<span id="cart">0</span>)</a></li>
         </ul>
     </div>
     <hr class="hr">
     <div id="div2" style="color: rgb(24, 24, 24); ">
 
-        <img id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt="">
+       <a href="index.html"> <img id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt=""></a>
 
         <ul id="topnav2" class="top"
             style="font-size: 13px;font-weight: bold;margin: 0px; padding: 0px;box-sizing: border-box;">
@@ -505,7 +512,7 @@ box-sizing: border-box;">
                             <div class="column">
                                 <h3>CATEGORY </h3>
                                 <a href="#">ALL JEWELLERY</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="earrings.html">EAR RINGS</a>
                                 <a href="#">PENDANTS</a>
                                 <a href="#">FINGER RINGS</a>
                                 <a href="#">MANGALSUTRA</a>
@@ -858,14 +865,14 @@ box-sizing: border-box;">
 
     <p><a href="index.html">HOME</a>  > CART</p>
     
-    <h1 id="num_of_products">Number of products</h1>
+    <h1 id="num_of_products" style="margin-bottom: 20px;">Number of products</h1>
 <div id="biggerforflex">
 
     <div id="items_cartdiv">
        
     </div>
      
-    <div id="pricedetails">
+    <div id="pricedetails" style="display: flex;flex-direction: column;justify-content: space-evenly;">
         <h1 id="summary">ORDER SUMMARY</h1>
         <div id="forinputofvoucher">
             <input type="text" placeholder="Enter Promo code" id="voucher">
@@ -873,17 +880,17 @@ box-sizing: border-box;">
         </div>
           <p id="showsuccessofvoucher"></p>
         <div id="ordertotal">
-            <p>ORDER TOTAL  <span id="for_total"></span></p>
+            <p style="line-height: 45px;">ORDER TOTAL  <span id="for_total"></span></p>
         </div>
 
         <div id="shippingdiscount">
-            <p>SHIPPING <span id="free1">FREE</span></p>
+            <p style="line-height: 45px;"> SHIPPING <span id="free1">FREE</span></p>
         </div>
        
         <div id="youpaydiv">
             <p id="youpay">YOU PAY <span id="for_total1"></span></p>
         </div>
-        <p id="inclusive">INCLUSIVE OF ALL TAXES*</p>
+        <p id="inclusive" style="line-height: 35px;">INCLUSIVE OF ALL TAXES*</p>
         <div id="linkcheckout"><button id="checkoutbot"><a href="addressandpayment.html">PROCEED TO CHECKOUT</a> </button></div>
     </div>
  
@@ -897,10 +904,7 @@ box-sizing: border-box;">
 
 <script>
 
-
-
 let cart_data= JSON.parse( localStorage.getItem("add-cart"));
-console.log(cart_data)
 let items_of_cart =document.getElementById("items_cartdiv")
 let total=0;
 let count=0;
@@ -969,19 +973,18 @@ function toremove(){
 let torem =document.getElementById("foronebox")
 let youpaydiv=document.getElementById("youpaydiv")
 let todeleteforlocal =JSON.parse(localStorage.getItem("add-cart"))
-console.log(todeleteforlocal)
 
-console.log("clicked")
 torem.remove();
 count--
 num_of_prod.textContent= "CART ITEMS -" + count;
 total_cost.textContent=Number(total-35023);
 you_pay.textContent = "₹ " + Number(total-35023);
+document.getElementById("cart").innerHTML = count;
 }
  forremove.addEventListener("click",toremove)
 
 //--------------X-------------x----------X
-
+document.getElementById("cart").innerHTML = count;
 
 let total_cost =document.getElementById("for_total")
 total_cost.textContent="₹ "+ Number(total);

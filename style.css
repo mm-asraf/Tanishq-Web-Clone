@@ -41,6 +41,15 @@
     margin: 0px;
     background-color:wheat;
 } */
+
+.hr{
+ 
+        margin: 10px -50px;
+        border: 0;
+        width: 103%;
+        border-top: 1px solid #ccc;
+}
+
 i{
 padding: 0px 5px;
 font-size: 15px;
@@ -530,9 +539,7 @@ color: #ccc;
     
 }
 
-/* .navbar a {
-    
-} */
+
 
 .dropdown{
     display: right;
@@ -575,7 +582,7 @@ color: #ccc;
 
   .column {
     float: left;
-    width: 33.33%;
+    width: 30%;
     padding: 10px;
     background-color: #fafafa;
     height: 450px;
@@ -601,8 +608,17 @@ color: #ccc;
     clear: both;
   }  
 
+/* hover navbar */
+.ancr:hover{
+color: #000000;
+}
 
-
-
+/* try-now button */
+#trynow{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: #ccc;
+}
 
   

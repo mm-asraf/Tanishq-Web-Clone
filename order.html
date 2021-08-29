@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/da2d034d86.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <title id="title"></title>
+    <title id="title">order</title>
     <style>
         *{
             font-family: sans-serif;
@@ -114,13 +116,15 @@
             font-size: 12px;
             background-color: #e9c456;
             color: white;
-            width: 220px;
+            width: 250px;
             margin-top: 20px;
             padding: 5px;
             text-align: center;
+            border-radius: 3px;
         }
         #try{
             width: 150px;
+            
         }
         #parah{
             font-size: 15px;
@@ -133,6 +137,7 @@
         }
         #gw{
             margin-top: 15px;
+            margin-left: 116;
             font-size: 14px;
         }
         #quantity{
@@ -140,6 +145,7 @@
         }
         #net-qty{
             font-size: 13px;
+            padding: 3px;
             margin-top: -80px;
             font-weight: normal;
         }
@@ -149,6 +155,7 @@
             border: 1px solid black;
             font-weight: normal;
         } 
+        
         #minus{
             margin-top: 50px;
             margin-left: -12px;
@@ -165,6 +172,7 @@
             margin-top: 20px;
             width: 350px;
             height: 55px;
+            margin-bottom: 20px;
             font-size: 15px;
             letter-spacing: 1px;
             background-color: white;
@@ -200,6 +208,7 @@
         #correct{
             margin-left: 70px;
             font-size: 12px;
+            margin-top: 20px;
             font-weight: bolder;
         }
         #items-left{
@@ -217,18 +226,18 @@
             <li><a class="ancr" href="#">GOLD RATE</a></li>
         </ul>
         <ul id="ul2" class="one-sdv">
-            <li><a class="ancr" href="#">LOGIN</a></li>
+            <li><a class="ancr" href="login.html">LOGIN</a></li>
             <li><a class="ancr" href="#">ENCIRCLE</a></li>
             <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
             <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
             <li><i class="ancr" class="far fa-heart"></i><a href="#" style="text-decoration: none;">WISHLIST</a></li>
-            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="#" style="text-decoration: none;">CART(0)</a></li>
+            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="cart.html"  style="text-decoration: none;">CART(<span id="cart">0</span>)</a></li>
         </ul>
     </div>
     <hr class="hr">
     <div id="div2" style="color: rgb(24, 24, 24); ">
 
-        <img id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt="">
+       <a href="index.html"> <img id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt=""></a>
 
         <ul id="topnav2" class="top"
             style="font-size: 13px;font-weight: bold;margin: 0px; padding: 0px;box-sizing: border-box;">
@@ -244,7 +253,7 @@
                             <div class="column">
                                 <h3>CATEGORY </h3>
                                 <a href="#">ALL JEWELLERY</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="earrings.html">EAR RINGS</a>
                                 <a href="#">PENDANTS</a>
                                 <a href="#">FINGER RINGS</a>
                                 <a href="#">MANGALSUTRA</a>
@@ -633,7 +642,6 @@
         if(localStorage.getItem("add-cart") === null){ 
             localStorage.setItem("add-cart", JSON.stringify([]));
         } 
-        const cart_data =[];
 
         function addToCart(){
             /* pushing the data into the local storage */
@@ -646,10 +654,14 @@
                 price: price,
                 image: image,
             }
-            cart_data.push(data);
+           let cart_data= JSON.parse(localStorage.getItem("add-cart"));
+           cart_data.push(data);
 
             localStorage.setItem("add-cart", JSON.stringify(cart_data));
+
+            document.getElementById("cart").innerHTML = Object.keys(cart_data).length;
         }
+       
         let data = localStorage.getItem("show_item");
         let data_obj = JSON.parse(data);
         document.getElementById("title").innerHTML = data_obj.name + " | Tanishq";
@@ -659,8 +671,7 @@
         document.getElementById("new_Price").innerHTML = data_obj.newPrice;
         document.getElementById("text2").innerHTML = data_obj.name;
 
-
-        function goToHome() {
+        function goToHome(){
             location.replace("index.html")
         }
 

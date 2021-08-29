@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>ADDRESS & PAYMENT</title>
+    <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +81,7 @@ height: 320px;
 font-family: 'Roboto Slab', serif;
 }
 
-#fieldste5 >input{
+#form > input{
   height: 45px;
   background-color: rgb(245, 245, 245);
  border: 1px solid rgb(240, 240, 240);
@@ -90,6 +91,18 @@ font-family: 'Roboto Slab', serif;
  padding-left: 3%;
  font-family: 'Roboto Slab', serif;
 }
+
+#fullname{
+    width: 98%;
+    margin: 5px;
+}
+
+
+#mobnumber{
+    width: 98%;
+    margin: 5px;
+}
+
 
 #legend5{
   display: flex;
@@ -127,16 +140,20 @@ font-size: 16px;
 }
 #cvv{
   width: 20%;
+  margin: 5px;
   font-family: 'Roboto Slab', serif;
 }
 #expirymonth{
-  width: 50%;
+  width: 60%;
+  margin: 5px;
 }
 #expiryyear1{
-  width: 50%;
+  width: 60%;
+  margin: 5px;
 }
 #paymnetdon{
   height: 45px;
+  width: 100%;
   color: white;
   background-color: black;
   font-size: 20px;
@@ -150,6 +167,11 @@ font-size: 16px;
   margin-bottom: 4%;
   font-family: 'Roboto Slab', serif;
 }
+/* 
+
+#fullname,#mobname{
+    width: ;
+} */
 
 /* ------------------------------------------- */
   
@@ -416,7 +438,7 @@ h1{
 <hr class="hr">
 <div id="div2" style="color: rgb(24, 24, 24); ">
 
-    <img id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt="">
+  <a href="index.html"><img id="logo"  src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt=""></a>
 
     <ul id="topnav2" class="top"
         style="font-size: 13px;font-weight: bold;margin: 0px; padding: 0px;box-sizing: border-box;">
@@ -432,7 +454,7 @@ h1{
                         <div class="column">
                             <h3>CATEGORY </h3>
                             <a href="#">ALL JEWELLERY</a>
-                            <a href="earrings.html">EARRINGS</a>
+                            <a href="earrings.html">EAR RINGS</a>
                             <a href="#">PENDANTS</a>
                             <a href="#">FINGER RINGS</a>
                             <a href="#">MANGALSUTRA</a>
@@ -792,26 +814,27 @@ h1{
         <legend id="legend4"> BILLING ADDRESS</legend>
              <input type="text" placeholder="NAME" id="fullname">
 
-            <input type="number" placeholder="MOBILE NUMBER" id="mobnumber">
+             <input type="tel" id="mobnumber" name="number" placeholder="Mobile Number"
+             pattern="[0-9]{10}">
 
-            <input type="email" placeholder="EMAIL ID" id="email">
+            <input type="email" placeholder="EMAIL ID" id="email" style="width: 98%;margin-left: 5px;">
 
-            <input id="addlin1" type="address" placeholder="ADDRESS LINE 1">
+            <input id="addlin1" type="address" placeholder="ADDRESS LINE 1" style="width: 98%;margin-left: 5px;">
 
-            <input id="addlin2" type="address" placeholder="ADDRESS LINE 2">
+            <input id="addlin2" type="address" placeholder="ADDRESS LINE 2" style="width: 98%;margin-left: 5px;">
            
             <div id="ctypin">
-                <input id="addlin3" type="address" placeholder="CITY">
+                <input id="addlin3" type="address" placeholder="CITY" style="margin-left: 5px;">
 
-                <input id="addlin4" type="number" placeholder="PIN">
+                <input type="tel" id="addlin4" name="number" placeholder="Mobile Number"
+                pattern="[0-9]{6}">
             </div>
            
-            <input id="addlin5" type="text" placeholder="STATE">
-
+            <input id="addlin5" type="text" placeholder="STATE" style="width: 98%;margin-left: 5px;">
      </fieldset>
 
 
-
+     
      <fieldset id="fieldste5">
          
         <legend id="legend5"> PAYMENT DETAILS</legend>
@@ -828,19 +851,57 @@ h1{
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="mastercard">
 
             </div>
+
+
+<!--             
              <input type="text" placeholder="NAME ON CARD*" id="fullname">
-         
-            <input type="number" placeholder="CARD NUMBER*" id="mobnumber">
+             <input type="tel" id="mobnumber" name="number" placeholder="Mobile Number"
+             pattern="[0-9]{10}">
+               <div id="expiryyear">
+                <input type="tel" id="expirymonth" name="number" placeholder="EXPIRY MONTH"
+                pattern="[0-9]{2}">
+                
+               
+                <input type="tel" id="expiryyear1" name="number" placeholder="EXPIRY YEAR"
+             pattern="[0-9]{4}">
+
+                <input type="tel" id="cvv" name="number" placeholder="CVV"
+             pattern="[0-9]{3}">
+             </div>
+            <button id="paymnetdon" onclick="payclick()">PAY</button> -->
             
 
-             <div id="expiryyear">
-                <input id="expirymonth" type="text" placeholder="EXPIRY MONTH ">
 
-                <input id="expiryyear1" type="number" placeholder="EXPIRY YEAR">
-               
-                <input type="number" id="cvv" placeholder="CVV">
-             </div>
-            <button id="paymnetdon" onclick="payclick()">PAY</button>
+<form id="form">
+
+    <input type="text" placeholder="NAME ON CARD*" id="fullname">
+    <input type="tel" id="mobnumber" name="number" placeholder="Card Number"
+    pattern="[0-9]{16}">
+      <div id="expiryyear">
+       <input type="tel" id="expirymonth" name="number" placeholder="EXPIRY MONTH"
+       pattern="[0-9]{2}">
+       
+      
+       <input type="tel" id="expiryyear1" name="number" placeholder="EXPIRY YEAR"
+    pattern="[0-9]{4}">
+
+       <input type="tel" id="cvv" name="number" placeholder="CVV"
+    pattern="[0-9]{3}">
+    </div>
+   <button id="paymnetdon" onclick="payclick()">PAY</button>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
 
      </fieldset>
    </div>
@@ -849,9 +910,19 @@ h1{
 
    <script>
 
-let btnforpay =document.getElementById("paymnetdon")
+// let btnforpay =document.getElementById("paymnetdon")
 
  function payclick(){
+
+    if (document.getElementById('expirymonth').value == "" || document.getElementById('expiryyear1').value == "" || document.getElementById('cvv').value == "") {
+            alert("Please Fill All Payment Details!");
+        } else {
+           
+            alert("Payment Successful! Order Confirmed");
+        }
+
+
+
 
  }
 
