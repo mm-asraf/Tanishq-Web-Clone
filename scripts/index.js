@@ -25,6 +25,12 @@ function changeImg() {
 window.onload = changeImg;
 
 
+  let data = JSON.parse(localStorage.getItem("projectuserdata"))
+  setTimeout (() =>{
+    document.getElementById("change_name").innerHTML = data[0].first_name
+},100) 
+  
+
 // Validating Empty Field
 function check_empty() {
     if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('number').value == "") {
@@ -44,7 +50,7 @@ function div_hide() {
 }
 // shop cate
 
-$(document).ready(function(){
+/* $(document).ready(function(){
 $('.customer-logos').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -65,4 +71,4 @@ $('.customer-logos').slick({
         }
     }]
 });
-});
+}); */

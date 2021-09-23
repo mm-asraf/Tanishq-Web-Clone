@@ -22,6 +22,7 @@ padding-left: 10%;
 padding-right: 10%;
 font-weight: 600;
 font-family: 'Roboto Slab', serif;
+padding-bottom: 0% !important;
 }
 
 #fieldste2{
@@ -30,9 +31,9 @@ margin: auto;
 display: grid;
 padding-left: 0%;
 padding-right: 0%;
-padding-bottom: 0%;
+padding-bottom: 0% !important;
 font-family: 'Roboto Slab', serif;
-height: 630px;
+height: 510px;
 gap: 7%;
 }
 
@@ -87,11 +88,12 @@ font-family: 'Roboto Slab', serif;
 #register{
 height: 41px;
 width: 100% !important;
-padding: 1%;
+/* padding: 1%; */
 font-size: 20px;
 background-color: black;
 color: white;
 font-family: 'Roboto Slab', serif;
+margin-bottom: 0% !important;
 }
 
 
@@ -618,7 +620,7 @@ text-decoration: underline;
 
 .column {
 float: left;
-width: 33.33%;
+width: 30%;
 padding: 10px;
 background-color: #fafafa;
 height: 450px;
@@ -642,4 +644,4 @@ color: #181818;
 content: "";
 display: table;
 clear: both;
-}  
+}

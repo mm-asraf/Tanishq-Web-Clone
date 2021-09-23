@@ -29,6 +29,12 @@ function login(){
         return
     }
    }
+   /* let data = JSON.parse(localStorage.getItem("projectuserdata"))
+   let loginName = document.getElementById("change_name")
+   if(loginName.value){}
+   /* document.getElementById("change_name").innerHTML = loginName.replace("LOGIN","Yash") */
+ 
+
    }
  check()
 }
@@ -57,6 +63,7 @@ function regsiterClick(){
    let password=document.getElementById("password").value;
    let checkdon=document.getElementById("checkboxid").checked;
   //   console.log(title,f_name,l_name,mob_num,email,password)
+
 
   let userdata =new Array();
 
@@ -90,4 +97,7 @@ function regsiterClick(){
        }
 }
 
+
  //for signup page -------X--------------X
+
+ 
