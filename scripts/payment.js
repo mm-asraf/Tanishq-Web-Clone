@@ -6,7 +6,7 @@ let details = document.getElementById("paymntsdiv")
 
     let fullanme =document.getElementById("fullname").value;
     console.log(fullanme)
-    let mobnumber1 =document.getElementById("mobnumber1").value;
+    let mobnumber1 =document.getElementById("mobnumber").value;
     let email =document.getElementById("email").value;
     let addlin1 =document.getElementById("addlin1").value;
     let addlin2 =document.getElementById("addlin2").value;
@@ -15,7 +15,7 @@ let details = document.getElementById("paymntsdiv")
     let addlin5 =document.getElementById("addlin5").value;
     
     
-    let fullnamenext=document.getElementById("fullname2").value;
+    let fullnamenext=document.getElementById("fullname").value;
     let mobnumber2 =document.getElementById("mobnumber")
     let expirymonth =document.getElementById("expirymonth").value;
     let expiryyear1 =document.getElementById("expiryyear1").value;
@@ -25,7 +25,7 @@ let details = document.getElementById("paymntsdiv")
 
 
 
-if(fullanme==='' || mobnumber1=="" || email=="" || addlin1=="" || addlin2=="" || addlin3=="" ||addlin4=="" || addlin5=="" || fullnamenext=="" || mobnumber2=="" || expirymonth=="" || expiryyear1=="" || CVV==""){
+if(fullanme===' ' || mobnumber1==" " || email==" " || addlin1==" " || addlin2==" " || addlin3==" " ||addlin4==" " || addlin5==" " || fullnamenext==" " || mobnumber2==" " || expirymonth==" " || expiryyear1==" " || CVV==" "){
     alert("Please fill all the details.")
 }
  else{

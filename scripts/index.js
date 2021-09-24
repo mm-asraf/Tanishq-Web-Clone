@@ -26,9 +26,11 @@ window.onload = changeImg;
 
 
   let data = JSON.parse(localStorage.getItem("projectuserdata"))
+  
+  if(data)
   setTimeout (() =>{
-    document.getElementById("change_name").innerHTML = data[0].first_name
-},100) 
+    document.getElementById("change_name").innerHTML = data[data.length-1].first_name
+},1000) 
   
 
 // Validating Empty Field
@@ -48,27 +50,3 @@ function div_show() {
 function div_hide() {
     document.getElementById('popupContact').style.display = "none";
 }
-// shop cate
-
-/* $(document).ready(function(){
-$('.customer-logos').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [{
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 4
-        }
-    }, {
-        breakpoint: 520,
-        settings: {
-            slidesToShow: 3
-        }
-    }]
-});
-}); */

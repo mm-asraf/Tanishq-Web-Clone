@@ -154,23 +154,22 @@ div > img > #auto-change {
     height: 400px;
 }
 #riva{
-    width: 18%;
-    margin-right: 275px;
-    margin-top: 20px;
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 63%;
 }
 .mid{
-    width: 95%;
-    margin-bottom: 10px;
-    margin-left: 850px;
+    width: 71%;
+    margin-left: 21%;
 }
 
 #mid-para{
     text-align: center;
-    margin-left: 700px;
-    margin-top: -10px;
+    margin-left: 52%;
+    margin-top: -1%;
     font-weight: inherit;
-    margin-right: 100px;
-    line-height: 30px;
+    margin-right: 6%;
+    line-height: 150%;
     font-family: sans-serif;
 }
 .arrange-btn{

@@ -47,7 +47,6 @@ let count=0;
       
       forremove.setAttribute("id","forremove");
        forremove.textContent="REMOVE" 
-       /* forremove.onclick = "removeItem(index)"; */
       forremove.addEventListener("click",function(){
             removeItem(index)
       })
@@ -90,33 +89,11 @@ items.forEach (function(newPrice){
     
 })
 count--
-// num_of_prod.textContent= "CART ITEMS -" + count;
 total_cost.textContent=Number(total);
 you_pay.textContent = "₹ " + Number(total);
 document.getElementById("cart").innerHTML = count;
 }
 
-/* forremove.addEventListener("click",toremove) */
-
-
-/* function toremove(){
- let num_of_prod =document.getElementById("num_of_products");
- let total_cost =document.getElementById("for_total")
-let torem =document.getElementById("foronebox")
-let youpaydiv=document.getElementById("youpaydiv")
-let totalvalue = document.getElementById("priceka")
-let todeleteforlocal =JSON.parse(localStorage.getItem("add-cart"))
-
-torem.remove();
-count--
-num_of_prod.textContent= "CART ITEMS -" + count;
-total_cost.textContent=Number(total);
-you_pay.textContent = "₹ " + Number(total);
-document.getElementById("cart").innerHTML = count;
-}
-  */
-
-//--------------X-------------x----------X
 document.getElementById("cart").innerHTML = count;
 
 let total_cost =document.getElementById("for_total")
@@ -150,3 +127,17 @@ function applyVoucher(e){
 you_pay.textContent="₹ "+total
 
 //for promocode----------X-----------X
+
+//-----functionality for procced to checkout button------//
+
+let proceedBtn = document.getElementById("checkoutbot");
+
+let items =JSON.parse(localStorage.getItem("add-cart"))
+
+proceedBtn.onclick = function(){
+  if(items.length==0){
+    alert("please add the item")
+  }else{
+    window.location.href = "payment.html"
+  }
+}

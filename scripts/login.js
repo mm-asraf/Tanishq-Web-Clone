@@ -8,8 +8,6 @@ function login(){
   
    let fromlocal =localStorage.getItem("projectuserdata") ;
    let forcheck=JSON.parse(fromlocal);
-   console.log(forcheck)
-   console.log(forcheck.email, forcheck.password)
      
             // for checking data from local storage
    function check(){
@@ -29,11 +27,6 @@ function login(){
         return
     }
    }
-   /* let data = JSON.parse(localStorage.getItem("projectuserdata"))
-   let loginName = document.getElementById("change_name")
-   if(loginName.value){}
-   /* document.getElementById("change_name").innerHTML = loginName.replace("LOGIN","Yash") */
- 
 
    }
  check()
