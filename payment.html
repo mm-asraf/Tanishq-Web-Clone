@@ -399,67 +399,66 @@
 <hr class="hr">
 
 
-    <h1 id="address">ADDRESS & PAYMENT</h1>
-   <div id="paymntsdiv">
+<h1 id="address">ADDRESS & PAYMENT</h1>
+<div id="paymntsdiv">
 
-    <fieldset id="fieldste4">
+ <fieldset id="fieldste4">
 
-        <legend id="legend4"> BILLING ADDRESS</legend>
-             <input type="text" placeholder="NAME" id="fullname">
+     <legend id="legend4"> BILLING ADDRESS</legend>
+          <input type="text" placeholder="NAME" id="fullname">
 
-            <input type="number" placeholder="MOBILE NUMBER" id="mobnumber">
+         <input type="number" placeholder="MOBILE NUMBER" id="mobnumber1">
 
-            <input type="email" placeholder="EMAIL ID" id="email">
+         <input type="email" placeholder="EMAIL ID" id="email">
 
-            <input id="addlin1" type="address" placeholder="ADDRESS LINE 1">
+         <input id="addlin1" type="address" placeholder="ADDRESS LINE 1">
 
-            <input id="addlin2" type="address" placeholder="ADDRESS LINE 2">
-           
-            <div id="ctypin">
-                <input id="addlin3" type="address" placeholder="CITY">
+         <input id="addlin2" type="address" placeholder="ADDRESS LINE 2">
+        
+         <div id="ctypin">
+             <input id="addlin3" type="address" placeholder="CITY">
 
-                <input id="addlin4" type="number" placeholder="PIN">
-            </div>
-           
-            <input id="addlin5" type="text" placeholder="STATE">
+             <input id="addlin4" type="number" placeholder="PIN">
+         </div>
+        
+         <input id="addlin5" type="text" placeholder="STATE">
 
-     </fieldset>
+  </fieldset>
 
 
 
-     <fieldset id="fieldste5">
+  <fieldset id="fieldste5">
+      
+     <legend id="legend5"> PAYMENT DETAILS</legend>
+       
+         <div id="acceptedimage">
+           <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo-2006-2014.png" alt="VISA LOGO">
+
+           <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" alt="rupay logo">
+
+           <img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/news8331.jpeg" alt="paytm">
+
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png" alt="UPI">
+
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="mastercard">
+
+         </div>
+          <input type="text" placeholder="NAME ON CARD*" id="fullname2">
+      
+         <input type="number" placeholder="CARD NUMBER*" id="mobnumber">
          
-        <legend id="legend5"> PAYMENT DETAILS</legend>
-          
-            <div id="acceptedimage">
-              <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo-2006-2014.png" alt="VISA LOGO">
 
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" alt="rupay logo">
+          <div id="expiryyear">
+             <input id="expirymonth" type="text" placeholder="EXPIRY MONTH ">
 
-              <img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/news8331.jpeg" alt="paytm">
-
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png" alt="UPI">
-
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="mastercard">
-
-            </div>
-             <input type="text" placeholder="NAME ON CARD*" id="fullname">
-         
-            <input type="number" placeholder="CARD NUMBER*" id="mobnumber">
+             <input id="expiryyear1" type="number" placeholder="EXPIRY YEAR">
             
+             <input type="number" id="cvv" placeholder="CVV">
+          </div>
+         <button id="paymnetdon" onclick="payclick()">PAY</button>
 
-             <div id="expiryyear">
-                <input id="expirymonth" type="text" placeholder="EXPIRY MONTH ">
-
-                <input id="expiryyear1" type="number" placeholder="EXPIRY YEAR">
-               
-                <input type="number" id="cvv" placeholder="CVV">
-             </div>
-            <button id="paymnetdon" onclick="payclick()">PAY</button>
-
-
-     </fieldset>
-   </div>
+  </fieldset>
+</div>
 </body>
 </html>
 <script src="./scripts/payment.js"></script>
