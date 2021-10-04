@@ -4,6 +4,7 @@
 #div-for-pic {
 margin-bottom: 1%;
 margin-top: 0%;
+cursor: none;
 font-family: 'Roboto Slab', serif;
 }
 #div-for-pic img{
@@ -228,7 +229,7 @@ font-family: 'Roboto Slab', serif;
 #div_auntyimg{
 position: fixed !important;
 top: 440px;
-margin: auto;
+margin-left: 5%;
 font-family: 'Roboto Slab', serif;
 cursor: pointer;
 }
