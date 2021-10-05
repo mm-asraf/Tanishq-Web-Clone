@@ -487,7 +487,8 @@ placeholder {
 .dropdown .dropbtn {
   border: none;
   outline: none;
-  color: white;
+  color: #181818;
+
   padding: 14px 14px;
   font-size: 12px;
   background-color: inherit;
