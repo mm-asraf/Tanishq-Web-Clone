@@ -371,3 +371,25 @@ content: "";
 display: table;
 clear: both;
 }  
+
+
+
+/* update inline to external */
+
+#div1{
+    margin: 0px; padding: 0px; box-sizing: border-box;
+}
+#ul2 > li > .wish{
+    text-decoration: none;
+}
+
+#div2{
+    color: rgb(24, 24, 24); 
+}
+
+#topnav2{
+    font-size: 13px;font-weight: bold;margin: 0px; padding: 0px;box-sizing: border-box
+}
+.navbar > .dropdown >.dropbtn{
+    color: #181818;opacity: 0.8;
+}
