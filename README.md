@@ -17,8 +17,11 @@
 ## Go to project directory:- 
 `cd Tanishq-Web-Clone`
 
-## Presentation :-
+## Presentation Video :-
 [Demo of project](https://drive.google.com/file/d/1DlT71CxGs9CIsoeNZWU1pgOh03OZI2MY/view?usp=sharing)
+
+## Deployed Demo link :-
+[Demo of project](https://upbeat-bhabha-f97b6b.netlify.app/)
 
 ## Contributers :- 
 - #### [Mahboob](https://www.linkedin.com/in/mahboob-asraf/)
